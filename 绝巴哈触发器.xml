@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+<TriggernometryExport Version="1">
+  <ExportedFolder Id="788c1d8b-d4d4-45a1-9973-6acc3dd7d7cf" Name="绝巴哈触发器（直接用，不用改ID）" Enabled="true">
+    <Folders>
+      <Folder Id="ea381d20-757c-4e80-81bd-05fb1e5c9bba" Name="奈尔机制" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="月环钢铁" Id="8d107cf6-964c-4f79-9602-3937a63522fa" RegularExpression="月光啊！ 照亮铁血霸道！">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="月环钢铁" ActionType="UseTTS" RefireInterrupt="True">
+                <Conditions />
+              </Action>
+            </Actions>
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="月环分摊" Id="1a42f0c3-3806-44ac-831c-9242fcfcec72" RegularExpression="月光啊！ 用你的炽热烧尽敌人！">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="月环分摊" ActionType="UseTTS" RefireInterrupt="True">
+                <Conditions />
+              </Action>
+            </Actions>
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="分摊钢铁" Id="6942d871-b8e8-41d2-b1cf-704ae545a12d" RegularExpression="被炽热灼烧过的轨迹 乃成铁血霸道！">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="分摊钢铁" ActionType="UseTTS" RefireInterrupt="True">
+                <Conditions />
+              </Action>
+            </Actions>
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="分摊月环" Id="ccdd6110-2b98-4058-bf5d-0e346d46765b" RegularExpression="炽热燃烧！ 给予我月亮的祝福！">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="分摊月环" ActionType="UseTTS" RefireInterrupt="True">
+                <Conditions />
+              </Action>
+            </Actions>
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="跳跃钢铁" Id="506f10b4-0297-4b36-a3df-6be8f02f951a" RegularExpression="我降临于此， 征战铁血霸道！">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="跳跃钢铁" ActionType="UseTTS" RefireInterrupt="True">
+                <Conditions />
+              </Action>
+            </Actions>
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="跳跃月环" Id="9e1fbfb8-bfec-4601-8848-58c0e011f05c" RegularExpression="我降临于此， 对月长啸！">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="跳跃月环" ActionType="UseTTS" RefireInterrupt="True">
+                <Conditions />
+              </Action>
+            </Actions>
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="陨石跳T" Id="d9fb5d94-1073-4066-ab70-c917feb9cc4e" RegularExpression="超新星啊，更加闪耀吧！ 在星降之夜，称赞红月！">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="陨石跳T 分散" ActionType="UseTTS" RefireInterrupt="True">
+                <Conditions />
+              </Action>
+            </Actions>
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="跳T分摊" Id="258f30e0-0400-4790-ab74-cbaa72502e73" RegularExpression="超新星啊，更加闪耀吧！ 照亮红月下炽热之地！">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="跳T分摊" ActionType="UseTTS" RefireInterrupt="True">
+                <Conditions />
+              </Action>
+            </Actions>
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="跳跃月环陨石" Id="450f57bf-612a-45f7-9e5b-c9a2af4a7945" RegularExpression="我降临于此对月长啸！ 召唤星降之夜！">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="跳跃月环陨石" ActionType="UseTTS" RefireInterrupt="True">
+                <Conditions />
+              </Action>
+            </Actions>
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="月环跳跃陨石" Id="538a4c31-02cf-4f19-a5e1-8cabb853b37b" RegularExpression="我自月而来降临于此， 召唤星降之夜！">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="月环跳跃陨石 " ActionType="UseTTS" RefireInterrupt="True">
+                <Conditions />
+              </Action>
+            </Actions>
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="钢铁分摊跳跃" Id="77c40434-7c0e-4c0d-9577-f026f8614e09" RegularExpression="钢铁燃烧吧！ 成为我降临于此的刀剑吧！">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="钢铁分摊跳跃" ActionType="UseTTS" RefireInterrupt="True">
+                <Conditions />
+              </Action>
+            </Actions>
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="钢铁跳跃分摊" Id="db3e20db-499d-4e70-a915-6e62035c2640" RegularExpression="钢铁成为我降临于此的燃烧之剑！">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="钢铁跳跃分摊" ActionType="UseTTS" RefireInterrupt="True">
+                <Conditions />
+              </Action>
+            </Actions>
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="月环跳跃分摊" Id="55365090-d77b-4319-8240-d58b8aa2a687" RegularExpression="我自月而来降临于此， 踏过炽热之地！">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="月环跳跃分摊" ActionType="UseTTS" RefireInterrupt="True">
+                <Conditions />
+              </Action>
+            </Actions>
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="月环钢铁跳跃" Id="6d8ad709-c4e8-4f5f-a0bc-d64425098e05" RegularExpression="我自月而来携钢铁降临于此！">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="月环钢铁跳跃" ActionType="UseTTS" RefireInterrupt="True">
+                <Conditions />
+              </Action>
+            </Actions>
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="跳T钢铁" Id="1ec877d2-ed75-4271-806a-6ceb5b323a76" RegularExpression="fzqzcyc">
+            <Actions />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="凶鸟跳跃" Id="e74f808c-548d-42f8-ae0f-4f05aa817f68" RegularExpression="奈尔·神·达纳斯:26BE:凶鸟冲">
+            <Actions>
+              <Action OrderNumber="1" SystemBeepFreqExpression="500" SystemBeepLengthExpression="300" UseTTSTextExpression="跳了" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" RefireInterrupt="True">
+                <Conditions />
+              </Action>
+            </Actions>
+            <Conditions />
+          </Trigger>
+        </Triggers>
+      </Folder>
+    </Folders>
+    <Triggers>
+      <Trigger Enabled="true" Name="旋风" Id="269a7065-2e8d-4056-9c5c-9708497acd04" RegularExpression="14:26AA">
+        <Actions>
+          <Action OrderNumber="1" UseTTSTextExpression="旋风 旋风" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="小龙俯冲" Id="7f298fc8-f101-4458-8d17-1a88042a971e" RegularExpression="1B:.+:(?&lt;name&gt;.*?):0000:.+:0014:0000:0000:0000:">
+        <Actions>
+          <Action OrderNumber="1" UseTTSTextExpression="小龙俯冲" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="true" Grouping="Or">
+          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="RegexMatch" />
+        </Condition>
+      </Trigger>
+      <Trigger Enabled="true" Name="巴哈俯冲" Id="53039bde-f5a6-499a-945a-2a1d491effd9" RegularExpression="1B:.+:(?&lt;name&gt;.*?):0000:.+:0029:0000:0000:0000:">
+        <Actions>
+          <Action OrderNumber="1" UseTTSTextExpression="巴哈俯冲" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
+        </Actions>
+        <Condition Enabled="true" Grouping="Or">
+          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="RegexMatch" />
+        </Condition>
+      </Trigger>
+      <Trigger Enabled="true" Name="双塔俯冲" Id="aed9cc7a-6697-4b68-b632-4fb1159e1676" RegularExpression="1B:.+:(?&lt;name&gt;.*?):0000:.+:002A:0000:0000:0000:">
+        <Actions>
+          <Action OrderNumber="1" UseTTSTextExpression="双塔俯冲" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
+        </Actions>
+        <Condition Enabled="true" Grouping="Or">
+          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="RegexMatch" />
+        </Condition>
+      </Trigger>
+      <Trigger Enabled="true" Name="奈尔俯冲" Id="0f84551b-4432-431c-b9e0-7c2b3f2ec28b" RegularExpression="1B:.+:(?&lt;name&gt;.*?):0000:.+:0077:0000:0000:0000:">
+        <Actions>
+          <Action OrderNumber="1" UseTTSTextExpression="奈尔俯冲" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
+        </Actions>
+        <Condition Enabled="true" Grouping="Or">
+          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="RegexMatch" />
+        </Condition>
+      </Trigger>
+      <Trigger Enabled="true" Name="火分摊点名" Id="d536b226-50d8-4604-b2f1-03737e7f10b9" RegularExpression="1B:.+:(?&lt;name&gt;.*?):0000:.+:0075:0000:0000:0000">
+        <Actions>
+          <Action OrderNumber="1" UseTTSTextExpression="火火火" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
+        </Actions>
+        <Condition Enabled="true" Grouping="Or">
+          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="RegexMatch" />
+        </Condition>
+      </Trigger>
+      <Trigger Enabled="true" Name="百万核爆分摊" Id="30e1fe13-db71-41c3-bafb-4cabe5407403" RegularExpression="1B:.+:(?&lt;name&gt;.*?):0000:E11E:0027:0000:0000:0000:">
+        <Actions>
+          <Action OrderNumber="1" UseTTSTextExpression="分摊 分摊" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
+        </Actions>
+        <Condition Enabled="true" Grouping="Or">
+          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="RegexMatch" />
+        </Condition>
+      </Trigger>
+      <Trigger Enabled="true" Name="地震点名" Id="489233d1-9ee5-46b5-a992-b45d3e085491" RegularExpression="1B:.+:(?&lt;name&gt;.*?):0000:0000:0028:0000:0000:0000:">
+        <Actions>
+          <Action OrderNumber="1" UseTTSTextExpression="地震 地震" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
+        </Actions>
+        <Condition Enabled="true" Grouping="Or">
+          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="RegexMatch" />
+        </Condition>
+      </Trigger>
+      <Trigger Enabled="true" Name="魔力压缩点名" Id="58213382-1cc3-486d-a26c-f67fbb2fcd41" RegularExpression="1B:.+:(?&lt;name&gt;.*?):0000:.+:0076:0000:0000:0000:">
+        <Actions>
+          <Action OrderNumber="1" UseTTSTextExpression="黑球黑球" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
+        </Actions>
+        <Condition Enabled="true" Grouping="Or">
+          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="RegexMatch" />
+        </Condition>
+      </Trigger>
+      <Trigger Enabled="true" Name="雷点名" Id="f1baa8fa-ddd3-4caa-8d6f-55abbe2cb892" RegularExpression="26C7:.*?:.*?:(?&lt;name&gt;.*?):">
+        <Actions>
+          <Action OrderNumber="1" UseTTSTextExpression="雷雷雷" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
+        </Actions>
+        <Condition Enabled="true" Grouping="Or">
+          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="RegexMatch" />
+        </Condition>
+      </Trigger>
+      <Trigger Enabled="true" Name="死宣改 16秒" Id="3bca8fc8-5d34-4dd1-bacc-217943aedafc" RegularExpression="(?&lt;name&gt;.*?) gains the effect of 死亡宣告 from  for 16.00 Seconds.">
+        <Actions>
+          <Action OrderNumber="1" UseTTSTextExpression="光圈 3 3 3" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="true" Grouping="Or">
+          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="RegexMatch" />
+        </Condition>
+      </Trigger>
+      <Trigger Enabled="true" Name="死宣改 10秒" Id="9cf21e98-a67c-402b-a987-189e5622ca13" RegularExpression="(?&lt;name&gt;.*?) gains the effect of 死亡宣告 from  for 10.00 Seconds.">
+        <Actions>
+          <Action OrderNumber="1" UseTTSTextExpression="光圈 2 2 2" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True" />
+        </Actions>
+        <Condition Enabled="true" Grouping="Or">
+          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="RegexMatch" />
+        </Condition>
+      </Trigger>
+      <Trigger Enabled="true" Name="死宣改 06秒" Id="32b0cf19-3116-4738-8ffe-496a005df03d" RegularExpression="(?&lt;name&gt;.*?) gains the effect of 死亡宣告 from  for 6.00 Seconds.">
+        <Actions>
+          <Action OrderNumber="1" UseTTSTextExpression="光圈 1 1 1" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="true" Grouping="Or">
+          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="RegexMatch" />
+        </Condition>
+      </Trigger>
+      <Trigger Enabled="true" Name="凶鸟跳跃" Id="166dd85a-5f77-4b2c-a640-68f9fa2962e1" RegularExpression="奈尔·神·达纳斯:26BE:凶鸟冲">
+        <Actions>
+          <Action OrderNumber="1" SystemBeepFreqExpression="500" SystemBeepLengthExpression="300" UseTTSTextExpression="跳了" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" RefireInterrupt="True">
+            <Conditions />
+          </Action>
+        </Actions>
+        <Conditions />
+      </Trigger>
+    </Triggers>
+  </ExportedFolder>
+</TriggernometryExport>
