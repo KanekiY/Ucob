@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedFolder Id="788c1d8b-d4d4-45a1-9973-6acc3dd7d7cf" Name="绝巴哈触发器（直接用，不用改ID）" Enabled="false">
+  <ExportedFolder Id="788c1d8b-d4d4-45a1-9973-6acc3dd7d7cf" Name="绝巴哈触发器（直接用，不用改ID）" Enabled="true">
     <Folders>
       <Folder Id="ea381d20-757c-4e80-81bd-05fb1e5c9bba" Name="奈尔机制" Enabled="true">
         <Folders />
@@ -17,9 +17,7 @@
           </Trigger>
           <Trigger Enabled="true" Name="分摊钢铁" Id="6942d871-b8e8-41d2-b1cf-704ae545a12d" RegularExpression="被炽热灼烧过的轨迹 乃成铁血霸道！">
             <Actions>
-              <Action OrderNumber="1" UseTTSTextExpression="分摊钢铁" ActionType="UseTTS" RefireInterrupt="True">
-                <Conditions />
-              </Action>
+              <Action OrderNumber="1" UseTTSTextExpression="分摊钢铁" ActionType="UseTTS" RefireInterrupt="True" />
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
@@ -107,6 +105,28 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
+          <Trigger Enabled="true" Name="连击标点" Id="dd00e544-47bf-4b27-839d-6f93808f7da9" RegularExpression="] 00:282b">
+            <Actions>
+              <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:2005/place" JsonPayloadExpression="{&quot;A&quot;:{&quot;X&quot;:-20.319,&quot;Y&quot;:0.0,&quot;Z&quot;:-2.43,&quot;ID&quot;:0,&quot;Active&quot;:true},&quot;B&quot;:{&quot;X&quot;:-11.514,&quot;Y&quot;:0.0,&quot;Z&quot;:12.924,&quot;ID&quot;:1,&quot;Active&quot;:true},&quot;C&quot;:{&quot;X&quot;:11.514,&quot;Y&quot;:0.0,&quot;Z&quot;:12.924,&quot;ID&quot;:2,&quot;Active&quot;:true},&quot;D&quot;:{&quot;X&quot;:19.832,&quot;Y&quot;:0.0,&quot;Z&quot;:-1.566,&quot;ID&quot;:3,&quot;Active&quot;:true},&quot;One&quot;:{&quot;X&quot;:0.079,&quot;Y&quot;:0.0,&quot;Z&quot;:0.043,&quot;ID&quot;:4,&quot;Active&quot;:true},&quot;Two&quot;:{&quot;X&quot;:0.104,&quot;Y&quot;:0.0,&quot;Z&quot;:-9.924,&quot;ID&quot;:5,&quot;Active&quot;:true},&quot;Three&quot;:{&quot;X&quot;:-18.722,&quot;Y&quot;:0.0,&quot;Z&quot;:-8.296,&quot;ID&quot;:6,&quot;Active&quot;:true},&quot;Four&quot;:{&quot;X&quot;:18.711,&quot;Y&quot;:0.0,&quot;Z&quot;:-7.806,&quot;ID&quot;:7,&quot;Active&quot;:true}}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:2005/place" JsonPayloadExpression="{&quot;A&quot;:{&quot;X&quot;:-20.319,&quot;Y&quot;:0.0,&quot;Z&quot;:-2.43,&quot;ID&quot;:0,&quot;Active&quot;:true},&quot;B&quot;:{&quot;X&quot;:-11.514,&quot;Y&quot;:0.0,&quot;Z&quot;:12.924,&quot;ID&quot;:1,&quot;Active&quot;:true},&quot;C&quot;:{&quot;X&quot;:11.514,&quot;Y&quot;:0.0,&quot;Z&quot;:12.924,&quot;ID&quot;:2,&quot;Active&quot;:true},&quot;D&quot;:{&quot;X&quot;:19.832,&quot;Y&quot;:0.0,&quot;Z&quot;:-1.566,&quot;ID&quot;:3,&quot;Active&quot;:true},&quot;One&quot;:{&quot;X&quot;:0.079,&quot;Y&quot;:0.0,&quot;Z&quot;:0.043,&quot;ID&quot;:4,&quot;Active&quot;:true},&quot;Two&quot;:{&quot;X&quot;:0.104,&quot;Y&quot;:0.0,&quot;Z&quot;:-9.924,&quot;ID&quot;:5,&quot;Active&quot;:true},&quot;Three&quot;:{&quot;X&quot;:-18.722,&quot;Y&quot;:0.0,&quot;Z&quot;:-8.296,&quot;ID&quot;:6,&quot;Active&quot;:false},&quot;Four&quot;:{&quot;X&quot;:18.711,&quot;Y&quot;:0.0,&quot;Z&quot;:-7.806,&quot;ID&quot;:7,&quot;Active&quot;:false}}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="18000">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:2005/place" JsonPayloadExpression="{&quot;A&quot;:{&quot;X&quot;:-14,&quot;Y&quot;:0.0,&quot;Z&quot;:1.674,&quot;ID&quot;:0,&quot;Active&quot;:true},&quot;B&quot;:{&quot;X&quot;:-11.514,&quot;Y&quot;:0.0,&quot;Z&quot;:-12.924,&quot;ID&quot;:1,&quot;Active&quot;:true},&quot;C&quot;:{&quot;X&quot;:11.514,&quot;Y&quot;:0.0,&quot;Z&quot;:-12.924,&quot;ID&quot;:2,&quot;Active&quot;:true},&quot;D&quot;:{&quot;X&quot;:14,&quot;Y&quot;:0.0,&quot;Z&quot;:1.674,&quot;ID&quot;:3,&quot;Active&quot;:true}}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="6500">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="4" JsonEndpointExpression="http://127.0.0.1:2005/place" JsonPayloadExpression="{&quot;A&quot;:{&quot;X&quot;:0.09310722,&quot;Y&quot;:0.0,&quot;Z&quot;:-21.5709343,&quot;ID&quot;:0,&quot;Active&quot;:true},&quot;B&quot;:{&quot;X&quot;:22.03492,&quot;Y&quot;:-9.536743E-07,&quot;Z&quot;:0.0562648177,&quot;ID&quot;:1,&quot;Active&quot;:true},&quot;C&quot;:{&quot;X&quot;:0.107087493,&quot;Y&quot;:0.0,&quot;Z&quot;:21.92632,&quot;ID&quot;:2,&quot;Active&quot;:true},&quot;D&quot;:{&quot;X&quot;:-21.8358841,&quot;Y&quot;:9.536743E-07,&quot;Z&quot;:-0.191790581,&quot;ID&quot;:3,&quot;Active&quot;:true},&quot;One&quot;:{&quot;X&quot;:0.07961208,&quot;Y&quot;:-1.90734863E-06,&quot;Z&quot;:0.0431003571,&quot;ID&quot;:4,&quot;Active&quot;:true},&quot;Two&quot;:{&quot;X&quot;:0.104299545,&quot;Y&quot;:0.0,&quot;Z&quot;:-9.92495,&quot;ID&quot;:5,&quot;Active&quot;:true}}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="6000">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
         </Triggers>
       </Folder>
       <Folder Id="1aea606f-a191-473e-8aef-5b6dc76399ec" Name="奈尔机制文字" Enabled="true">
@@ -116,89 +136,71 @@
             <Actions>
               <Action OrderNumber="1" AuraName="haba_text" AuraImage="分摊月环" UseTTSTextExpression="分摊月环" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraForeground="Red" TextAuraName="baha_text" TextAuraExpression="月环钢铁" TextAuraXIniExpression="557" TextAuraYIniExpression="537" TextAuraWIniExpression="190" TextAuraHIniExpression="52" TextAuraOIniExpression="100" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" RefireInterrupt="True">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" LogLevel="-1" TextAuraOp="DeactivateAuraRegex" TextAuraFontSize="9" TextAuraName="baha_text" TextAuraFontName="宋体" ActionType="TextAura" ExecutionDelayExpression="10000">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="月环分摊" Id="68ffaf6c-d27d-4fbb-b226-9a45e8997d35" RegularExpression="月光啊！ 用你的炽热烧尽敌人！">
             <Actions>
               <Action OrderNumber="1" AuraName="haba_text" AuraImage="分摊月环" UseTTSTextExpression="分摊月环" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraForeground="Red" TextAuraName="baha_text" TextAuraExpression="月环分摊" TextAuraXIniExpression="557" TextAuraYIniExpression="537" TextAuraWIniExpression="190" TextAuraHIniExpression="52" TextAuraOIniExpression="100" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" RefireInterrupt="True">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" LogLevel="-1" TextAuraOp="DeactivateAuraRegex" TextAuraFontSize="9" TextAuraName="baha_text" TextAuraFontName="宋体" ActionType="TextAura" ExecutionDelayExpression="10000">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="分摊钢铁" Id="4002ca6e-b59d-44ea-8453-9990b65195f8" RegularExpression="被炽热灼烧过的轨迹 乃成铁血霸道！">
             <Actions>
               <Action OrderNumber="1" AuraName="haba_text" AuraImage="分摊月环" UseTTSTextExpression="分摊月环" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraForeground="Red" TextAuraName="baha_text" TextAuraExpression="分摊钢铁" TextAuraXIniExpression="557" TextAuraYIniExpression="537" TextAuraWIniExpression="190" TextAuraHIniExpression="52" TextAuraOIniExpression="100" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" RefireInterrupt="True">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" LogLevel="-1" TextAuraOp="DeactivateAuraRegex" TextAuraFontSize="9" TextAuraName="baha_text" TextAuraFontName="宋体" ActionType="TextAura" ExecutionDelayExpression="10000">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="分摊月环" Id="1140956d-d6cc-4134-92dc-b87b9ac21f70" RegularExpression="炽热燃烧！ 给予我月亮的祝福！">
             <Actions>
               <Action OrderNumber="1" AuraName="haba_text" AuraImage="分摊月环" UseTTSTextExpression="分摊月环" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraForeground="Red" TextAuraName="baha_text" TextAuraExpression="分摊月环" TextAuraXIniExpression="557" TextAuraYIniExpression="537" TextAuraWIniExpression="190" TextAuraHIniExpression="52" TextAuraOIniExpression="100" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" RefireInterrupt="True">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" LogLevel="-1" TextAuraOp="DeactivateAuraRegex" TextAuraFontSize="9" TextAuraName="baha_text" TextAuraFontName="宋体" ActionType="TextAura" ExecutionDelayExpression="10000">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="跳跃钢铁" Id="579d88ae-ef84-4dcd-aa44-3e1c3ca5ca57" RegularExpression="我降临于此， 征战铁血霸道！">
             <Actions>
               <Action OrderNumber="1" AuraName="haba_text" AuraImage="分摊月环" UseTTSTextExpression="分摊月环" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraForeground="Red" TextAuraName="baha_text" TextAuraExpression="跳跃钢铁" TextAuraXIniExpression="557" TextAuraYIniExpression="537" TextAuraWIniExpression="190" TextAuraHIniExpression="52" TextAuraOIniExpression="100" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" RefireInterrupt="True">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" LogLevel="-1" TextAuraOp="DeactivateAuraRegex" TextAuraFontSize="9" TextAuraName="baha_text" TextAuraFontName="宋体" ActionType="TextAura" ExecutionDelayExpression="10000">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="跳跃月环" Id="b8be9ea3-c96d-4da9-8e21-abbc67a4a679" RegularExpression="我降临于此， 对月长啸！">
             <Actions>
               <Action OrderNumber="1" AuraName="haba_text" AuraImage="分摊月环" UseTTSTextExpression="分摊月环" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraForeground="Red" TextAuraName="baha_text" TextAuraExpression="跳跃月环" TextAuraXIniExpression="557" TextAuraYIniExpression="537" TextAuraWIniExpression="190" TextAuraHIniExpression="52" TextAuraOIniExpression="100" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" RefireInterrupt="True">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" LogLevel="-1" TextAuraOp="DeactivateAuraRegex" TextAuraFontSize="9" TextAuraName="baha_text" TextAuraFontName="宋体" ActionType="TextAura" ExecutionDelayExpression="10000">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="陨石跳T" Id="693e5595-12d0-45b7-9dd5-dbe048006d2a" RegularExpression="超新星啊，更加闪耀吧！ 在星降之夜，称赞红月！">
             <Actions>
-              <Action OrderNumber="1" AuraName="haba_text" AuraImage="分摊月环" UseTTSTextExpression="分摊月环" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraForeground="Red" TextAuraName="baha_text" TextAuraExpression="陨石跳T" TextAuraXIniExpression="557" TextAuraYIniExpression="537" TextAuraWIniExpression="190" TextAuraHIniExpression="52" TextAuraOIniExpression="100" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" RefireInterrupt="True">
+              <Action OrderNumber="1" AuraName="haba_text" AuraImage="分摊月环" UseTTSTextExpression="分摊月环" TextAuraEffect="Bold" TextAuraFontSize="24" TextAuraForeground="Red" TextAuraOutline="Yellow" TextAuraName="baha_text" TextAuraExpression="分散跳T" TextAuraXIniExpression="557" TextAuraYIniExpression="537" TextAuraWIniExpression="190" TextAuraHIniExpression="52" TextAuraOIniExpression="100" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" RefireInterrupt="True">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
@@ -208,21 +210,17 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="跳T分摊" Id="c87d3841-6402-4f38-9b22-441c2cd1abce" RegularExpression="超新星啊，更加闪耀吧！ 照亮红月下炽热之地！">
             <Actions>
               <Action OrderNumber="1" AuraName="haba_text" AuraImage="分摊月环" UseTTSTextExpression="分摊月环" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraForeground="Red" TextAuraName="baha_text" TextAuraExpression="跳T分摊" TextAuraXIniExpression="557" TextAuraYIniExpression="537" TextAuraWIniExpression="190" TextAuraHIniExpression="52" TextAuraOIniExpression="100" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" RefireInterrupt="True">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" LogLevel="-1" TextAuraOp="DeactivateAuraRegex" TextAuraFontSize="9" TextAuraName="baha_text" TextAuraFontName="宋体" ActionType="TextAura" ExecutionDelayExpression="19000">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="跳跃月环陨石" Id="cd29eb4d-85f0-43fa-904e-a760e0cd9a59" RegularExpression="我降临于此对月长啸！ 召唤星降之夜！">
             <Actions>
@@ -230,9 +228,12 @@
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
+              <Action OrderNumber="2" LogLevel="-1" TextAuraOp="DeactivateAuraRegex" TextAuraFontSize="9" TextAuraName="baha_text" TextAuraFontName="宋体" ActionType="TextAura" ExecutionDelayExpression="19000">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="月环跳跃陨石" Id="3f469ba7-d8fe-4228-938d-c77fd3010786" RegularExpression="我自月而来降临于此， 召唤星降之夜！">
             <Actions>
@@ -240,58 +241,44 @@
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
+              <Action OrderNumber="2" LogLevel="-1" TextAuraOp="DeactivateAuraRegex" TextAuraFontSize="9" TextAuraName="baha_text" TextAuraFontName="宋体" ActionType="TextAura" ExecutionDelayExpression="19000">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="钢铁分摊跳跃" Id="8d94c95e-a777-4f36-bb10-ca60b4ec5a14" RegularExpression="钢铁燃烧吧！ 成为我降临于此的刀剑吧！">
             <Actions>
               <Action OrderNumber="1" AuraName="haba_text" AuraImage="分摊月环" UseTTSTextExpression="分摊月环" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraForeground="Red" TextAuraName="baha_text" TextAuraExpression="钢铁分摊跳跃" TextAuraXIniExpression="557" TextAuraYIniExpression="537" TextAuraWIniExpression="190" TextAuraHIniExpression="52" TextAuraOIniExpression="100" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" RefireInterrupt="True">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="钢铁跳跃分摊" Id="a4af1029-71c2-4f9b-8580-1a9db5d1daa9" RegularExpression="钢铁成为我降临于此的燃烧之剑！">
             <Actions>
               <Action OrderNumber="1" AuraName="haba_text" AuraImage="分摊月环" UseTTSTextExpression="分摊月环" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraForeground="Red" TextAuraName="baha_text" TextAuraExpression="钢铁跳跃分摊" TextAuraXIniExpression="557" TextAuraYIniExpression="537" TextAuraWIniExpression="190" TextAuraHIniExpression="52" TextAuraOIniExpression="100" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" RefireInterrupt="True">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="月环跳跃分摊" Id="13f0334a-32a0-40db-92bf-cc3a4bb07d87" RegularExpression="我自月而来降临于此， 踏过炽热之地！">
             <Actions>
               <Action OrderNumber="1" AuraName="haba_text" AuraImage="分摊月环" UseTTSTextExpression="分摊月环" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraForeground="Red" TextAuraName="baha_text" TextAuraExpression="月环跳跃分摊" TextAuraXIniExpression="557" TextAuraYIniExpression="537" TextAuraWIniExpression="190" TextAuraHIniExpression="52" TextAuraOIniExpression="100" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" RefireInterrupt="True">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="月环钢铁跳跃" Id="067d1992-7257-44f8-9722-a4cd6e760212" RegularExpression="我自月而来携钢铁降临于此！">
             <Actions>
               <Action OrderNumber="1" AuraName="haba_text" AuraImage="分摊月环" UseTTSTextExpression="分摊月环" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraForeground="Red" TextAuraName="baha_text" TextAuraExpression="月环钢铁跳跃" TextAuraXIniExpression="557" TextAuraYIniExpression="537" TextAuraWIniExpression="190" TextAuraHIniExpression="52" TextAuraOIniExpression="100" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura" RefireInterrupt="True">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
-          </Trigger>
-          <Trigger Enabled="true" Name="凶鸟跳跃" Id="26c37024-8682-4ebf-9873-0c4f9b4d3193" RegularExpression="奈尔·神·达纳斯:26BE:凶鸟冲">
-            <Actions>
-              <Action OrderNumber="1" SystemBeepFreqExpression="500" SystemBeepLengthExpression="300" UseTTSTextExpression="跳了" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" RefireInterrupt="True">
-                <Conditions />
-              </Action>
-            </Actions>
-            <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
@@ -412,6 +399,16 @@
           <Action OrderNumber="1" UseTTSTextExpression="百万核爆" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" RefireInterrupt="True" />
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="团灭初始化" Id="0902ce9c-296b-4e88-b8c7-b119bf09b1ef" RegularExpression="^.{14} 21:.{8}:4000001[026]">
+        <Actions>
+          <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelAllTrigger" ActionType="Trigger">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
       </Trigger>
     </Triggers>
   </ExportedFolder>
