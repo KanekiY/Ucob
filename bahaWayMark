@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<TriggernometryExport Version="1">
+  <ExportedFolder ZoneFilterEnabled="True" Id="c28270db-7cde-41e0-8d13-19457e9712b1" ZoneFilterRegularExpression="巴哈姆特绝境战" Name="巴哈" Enabled="true">
+    <Folders>
+      <Folder Id="184a833f-d21c-4016-8785-a33ab624e15d" Name="讲解用" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="false" Name="连击标点3" Id="1d7eb1be-8e5a-4061-947a-f4738ecc385d" RegularExpression="连击标点3">
+            <Actions>
+              <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:2005/place" JsonPayloadExpression="{&quot;A&quot;:{&quot;X&quot;:-14,&quot;Y&quot;:0.0,&quot;Z&quot;:1.674,&quot;ID&quot;:0,&quot;Active&quot;:true},&quot;B&quot;:{&quot;X&quot;:-13,&quot;Y&quot;:0.0,&quot;Z&quot;:-16.5,&quot;ID&quot;:1,&quot;Active&quot;:true},&quot;C&quot;:{&quot;X&quot;:13,&quot;Y&quot;:0.0,&quot;Z&quot;:-16.5,&quot;ID&quot;:2,&quot;Active&quot;:true},&quot;D&quot;:{&quot;X&quot;:14,&quot;Y&quot;:0.0,&quot;Z&quot;:1.674,&quot;ID&quot;:3,&quot;Active&quot;:true}}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="false" Name="连击标点1" Id="30ce2a39-1248-46d4-9ee6-4d29215aff0d" RegularExpression="连击标点1">
+            <Actions>
+              <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:2005/place" JsonPayloadExpression="{&quot;A&quot;:{&quot;X&quot;:-20.319,&quot;Y&quot;:0.0,&quot;Z&quot;:-2.43,&quot;ID&quot;:0,&quot;Active&quot;:true},&quot;B&quot;:{&quot;X&quot;:-13,&quot;Y&quot;:0.0,&quot;Z&quot;:16.5,&quot;ID&quot;:1,&quot;Active&quot;:true},&quot;C&quot;:{&quot;X&quot;:13,&quot;Y&quot;:0.0,&quot;Z&quot;:16.5,&quot;ID&quot;:2,&quot;Active&quot;:true},&quot;D&quot;:{&quot;X&quot;:19.832,&quot;Y&quot;:0.0,&quot;Z&quot;:-1.566,&quot;ID&quot;:3,&quot;Active&quot;:true},&quot;One&quot;:{&quot;X&quot;:0.079,&quot;Y&quot;:0.0,&quot;Z&quot;:0.043,&quot;ID&quot;:4,&quot;Active&quot;:true},&quot;Two&quot;:{&quot;X&quot;:0.104,&quot;Y&quot;:0.0,&quot;Z&quot;:-9.924,&quot;ID&quot;:5,&quot;Active&quot;:true},&quot;Three&quot;:{&quot;X&quot;:-18.722,&quot;Y&quot;:0.0,&quot;Z&quot;:-8.296,&quot;ID&quot;:6,&quot;Active&quot;:true},&quot;Four&quot;:{&quot;X&quot;:18.711,&quot;Y&quot;:0.0,&quot;Z&quot;:-7.806,&quot;ID&quot;:7,&quot;Active&quot;:true}}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="false" Name="连击标点2" Id="8e7c0d23-1e15-4b54-a05e-b10079bd604d" RegularExpression="连击标点2">
+            <Actions>
+              <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:2005/place" JsonPayloadExpression="{&quot;Three&quot;:{&quot;X&quot;:-18.722,&quot;Y&quot;:0.0,&quot;Z&quot;:-8.296,&quot;ID&quot;:6,&quot;Active&quot;:false},&quot;Four&quot;:{&quot;X&quot;:18.711,&quot;Y&quot;:0.0,&quot;Z&quot;:-7.806,&quot;ID&quot;:7,&quot;Active&quot;:false}}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="开始讲解" Id="a65a0cd0-6318-464d-bb5e-c31d0e21068c" RegularExpression="开始讲解Xwerldfssdklw888YYYsda">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="30ce2a39-1248-46d4-9ee6-4d29215aff0d" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="8e7c0d23-1e15-4b54-a05e-b10079bd604d" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="1d7eb1be-8e5a-4061-947a-f4738ecc385d" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="禁用讲解" Id="5ee3012f-451b-4444-b4db-52d767e300d1" RegularExpression="禁用讲解">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="30ce2a39-1248-46d4-9ee6-4d29215aff0d" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="8e7c0d23-1e15-4b54-a05e-b10079bd604d" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="1d7eb1be-8e5a-4061-947a-f4738ecc385d" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+        </Triggers>
+      </Folder>
+    </Folders>
+    <Triggers>
+      <Trigger Enabled="true" Name="巴哈重置" Id="a38223cd-193d-4d02-b97d-97ddd833d496" RegularExpression="距离战斗开始还有" PeriodRefire="Deny" RefirePeriodExpression="2000">
+        <Actions>
+          <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:2005/place" JsonPayloadExpression="{&quot;A&quot;:{&quot;X&quot;:-0.07233447,&quot;Y&quot;:-9.536743E-07,&quot;Z&quot;:-22.2067833,&quot;ID&quot;:0,&quot;Active&quot;:true},&quot;C&quot;:{&quot;X&quot;:8.039988,&quot;Y&quot;:1.90734863E-06,&quot;Z&quot;:-3.37868881,&quot;ID&quot;:1,&quot;Active&quot;:true},&quot;D&quot;:{&quot;X&quot;:0.290453434,&quot;Y&quot;:-3.81469727E-06,&quot;Z&quot;:9.521973,&quot;ID&quot;:2,&quot;Active&quot;:true},&quot;B&quot;:{&quot;X&quot;:-7.49105072,&quot;Y&quot;:-1.90734863E-06,&quot;Z&quot;:-3.033144,&quot;ID&quot;:3,&quot;Active&quot;:true},&quot;One&quot;:{&quot;X&quot;:0.07961208,&quot;Y&quot;:-1.90734863E-06,&quot;Z&quot;:0.0431003571,&quot;ID&quot;:4,&quot;Active&quot;:true},&quot;Two&quot;:{&quot;X&quot;:0.104299545,&quot;Y&quot;:0.0,&quot;Z&quot;:-9.92495,&quot;ID&quot;:5,&quot;Active&quot;:true}}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="巴哈p3" Id="e424891e-1889-4f59-ae91-e58ec3c66bb8" RegularExpression="至尊巴哈姆特:26D3:灵灾之焰" PeriodRefire="Deny" RefirePeriodExpression="2000">
+        <Actions>
+          <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:2005/place" JsonPayloadExpression="{&quot;A&quot;:{&quot;X&quot;:0.09310722,&quot;Y&quot;:0.0,&quot;Z&quot;:-21.5709343,&quot;ID&quot;:0,&quot;Active&quot;:true},&quot;B&quot;:{&quot;X&quot;:22.03492,&quot;Y&quot;:-9.536743E-07,&quot;Z&quot;:0.0562648177,&quot;ID&quot;:1,&quot;Active&quot;:true},&quot;C&quot;:{&quot;X&quot;:0.107087493,&quot;Y&quot;:0.0,&quot;Z&quot;:21.92632,&quot;ID&quot;:2,&quot;Active&quot;:true},&quot;D&quot;:{&quot;X&quot;:-21.8358841,&quot;Y&quot;:9.536743E-07,&quot;Z&quot;:-0.191790581,&quot;ID&quot;:3,&quot;Active&quot;:true},&quot;One&quot;:{&quot;X&quot;:0.07961208,&quot;Y&quot;:-1.90734863E-06,&quot;Z&quot;:0.0431003571,&quot;ID&quot;:4,&quot;Active&quot;:true},&quot;Two&quot;:{&quot;X&quot;:0.104299545,&quot;Y&quot;:0.0,&quot;Z&quot;:-9.92495,&quot;ID&quot;:5,&quot;Active&quot;:true}}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="连击标点" Id="9ef1639d-87ac-4235-8836-d0a42bc3fa39" RegularExpression="] 00:282b:至尊巴哈姆特正在发动.1连击的三重奏">
+        <Actions>
+          <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:2005/place" JsonPayloadExpression="{&quot;A&quot;:{&quot;X&quot;:-20.319,&quot;Y&quot;:0.0,&quot;Z&quot;:-2.43,&quot;ID&quot;:0,&quot;Active&quot;:true},&quot;B&quot;:{&quot;X&quot;:-13,&quot;Y&quot;:0.0,&quot;Z&quot;:16.5,&quot;ID&quot;:1,&quot;Active&quot;:true},&quot;C&quot;:{&quot;X&quot;:13,&quot;Y&quot;:0.0,&quot;Z&quot;:16.5,&quot;ID&quot;:2,&quot;Active&quot;:true},&quot;D&quot;:{&quot;X&quot;:19.832,&quot;Y&quot;:0.0,&quot;Z&quot;:-1.566,&quot;ID&quot;:3,&quot;Active&quot;:true},&quot;One&quot;:{&quot;X&quot;:0.079,&quot;Y&quot;:0.0,&quot;Z&quot;:0.043,&quot;ID&quot;:4,&quot;Active&quot;:true},&quot;Two&quot;:{&quot;X&quot;:0.104,&quot;Y&quot;:0.0,&quot;Z&quot;:-9.924,&quot;ID&quot;:5,&quot;Active&quot;:true},&quot;Three&quot;:{&quot;X&quot;:-18.722,&quot;Y&quot;:0.0,&quot;Z&quot;:-8.296,&quot;ID&quot;:6,&quot;Active&quot;:true},&quot;Four&quot;:{&quot;X&quot;:18.711,&quot;Y&quot;:0.0,&quot;Z&quot;:-7.806,&quot;ID&quot;:7,&quot;Active&quot;:true}}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:2005/place" JsonPayloadExpression="{&quot;Three&quot;:{&quot;X&quot;:-18.722,&quot;Y&quot;:0.0,&quot;Z&quot;:-8.296,&quot;ID&quot;:6,&quot;Active&quot;:false},&quot;Four&quot;:{&quot;X&quot;:18.711,&quot;Y&quot;:0.0,&quot;Z&quot;:-7.806,&quot;ID&quot;:7,&quot;Active&quot;:false}}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="18000">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:2005/place" JsonPayloadExpression="{&quot;A&quot;:{&quot;X&quot;:-14,&quot;Y&quot;:0.0,&quot;Z&quot;:1.674,&quot;ID&quot;:0,&quot;Active&quot;:true},&quot;B&quot;:{&quot;X&quot;:-13,&quot;Y&quot;:0.0,&quot;Z&quot;:-16.5,&quot;ID&quot;:1,&quot;Active&quot;:true},&quot;C&quot;:{&quot;X&quot;:13,&quot;Y&quot;:0.0,&quot;Z&quot;:-16.5,&quot;ID&quot;:2,&quot;Active&quot;:true},&quot;D&quot;:{&quot;X&quot;:14,&quot;Y&quot;:0.0,&quot;Z&quot;:1.674,&quot;ID&quot;:3,&quot;Active&quot;:true}}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="6500">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="4" JsonEndpointExpression="http://127.0.0.1:2005/place" JsonPayloadExpression="{&quot;A&quot;:{&quot;X&quot;:0.09310722,&quot;Y&quot;:0.0,&quot;Z&quot;:-21.5709343,&quot;ID&quot;:0,&quot;Active&quot;:true},&quot;B&quot;:{&quot;X&quot;:22.03492,&quot;Y&quot;:-9.536743E-07,&quot;Z&quot;:0.0562648177,&quot;ID&quot;:1,&quot;Active&quot;:true},&quot;C&quot;:{&quot;X&quot;:0.107087493,&quot;Y&quot;:0.0,&quot;Z&quot;:21.92632,&quot;ID&quot;:2,&quot;Active&quot;:true},&quot;D&quot;:{&quot;X&quot;:-21.8358841,&quot;Y&quot;:9.536743E-07,&quot;Z&quot;:-0.191790581,&quot;ID&quot;:3,&quot;Active&quot;:true},&quot;One&quot;:{&quot;X&quot;:0.07961208,&quot;Y&quot;:-1.90734863E-06,&quot;Z&quot;:0.0431003571,&quot;ID&quot;:4,&quot;Active&quot;:true},&quot;Two&quot;:{&quot;X&quot;:0.104299545,&quot;Y&quot;:0.0,&quot;Z&quot;:-9.92495,&quot;ID&quot;:5,&quot;Active&quot;:true}}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="6000">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+    </Triggers>
+  </ExportedFolder>
+</TriggernometryExport>
