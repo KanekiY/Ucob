@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedFolder Id="788c1d8b-d4d4-45a1-9973-6acc3dd7d7cf" Name="绝巴哈触发器（直接用，不用改ID）" Enabled="true">
+  <ExportedFolder Id="788c1d8b-d4d4-45a1-9973-6acc3dd7d7cf" Name="绝巴哈触发器（直接用，不用改ID）" Enabled="false">
     <Folders>
       <Folder Id="ea381d20-757c-4e80-81bd-05fb1e5c9bba" Name="奈尔机制" Enabled="true">
         <Folders />
