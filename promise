@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<TriggernometryExport Version="1">
+  <ExportedFolder Id="a945ae0b-19a5-46a0-901e-adada7eda773" Name="伊甸再生" Enabled="true">
+    <Folders>
+      <Folder Id="543e689f-f5ec-4d06-b272-a4f1d95960a2" Name="E10s" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="Umbra Smash 四连死刑" Id="60e948d4-7b9e-4d52-a2bd-9911dbd85826" RegularExpression="^.{14} 14:5BAA:Shadowkeeper starts using Umbra Smash on (?&lt;name&gt;.*?)">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="四连顺劈" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" LogLevel="-1" TextAuraEffect="Bold" TextAuraFontSize="20.25" TextAuraForeground="Red" TextAuraName="deathSen" TextAuraExpression="死刑  ${name}" TextAuraXIniExpression="1056" TextAuraYIniExpression="480" TextAuraWIniExpression="166" TextAuraHIniExpression="64" TextAuraOIniExpression="100" TextAuraFontName="宋体" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="3" LogLevel="-1" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="deathSen" TextAuraFontName="宋体" ActionType="TextAura" ExecutionDelayExpression="8000">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="Shadow Cleave 八方放影子" Id="4b1c233f-45d2-4bc6-9d1e-9a5181e5bd36" RegularExpression="] 00:282b:The Shadowkeeper readies Shadow Cleave">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="八方放影子" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="darkness unleash 点名分摊" Id="c7a96f1a-4a19-4774-90a3-aca750fb55a7" RegularExpression="] 00:282b:The Shadowkeeper readies Darkness Unleashed">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="分摊分摊" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+        </Triggers>
+      </Folder>
+    </Folders>
+    <Triggers />
+  </ExportedFolder>
+</TriggernometryExport>
