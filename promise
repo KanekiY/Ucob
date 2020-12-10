@@ -95,6 +95,16 @@
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Trigger>
+          <Trigger Enabled="true" Name="雷圈安全566A" Id="c3b09d65-2bc3-40df-b84c-8c3422c97196" RegularExpression="] 14:566A:Fatebreaker starts using Turn Of The Heavens on Fatebreaker">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="雷圈安全" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
         </Triggers>
       </Folder>
     </Folders>
