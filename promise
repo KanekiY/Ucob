@@ -2,7 +2,7 @@
 <TriggernometryExport Version="1">
   <ExportedFolder Id="a945ae0b-19a5-46a0-901e-adada7eda773" Name="伊甸再生" Enabled="true">
     <Folders>
-      <Folder Id="543e689f-f5ec-4d06-b272-a4f1d95960a2" Name="E10s" Enabled="true">
+      <Folder Id="543e689f-f5ec-4d06-b272-a4f1d95960a2" Name="E10s" Enabled="false">
         <Folders />
         <Triggers>
           <Trigger Enabled="true" Name="Umbra Smash 四连死刑" Id="60e948d4-7b9e-4d52-a2bd-9911dbd85826" RegularExpression="^.{14} 14:5BAA:Shadowkeeper starts using Umbra Smash on (?&lt;name&gt;.*?)">
@@ -11,33 +11,83 @@
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="2" LogLevel="-1" TextAuraEffect="Bold" TextAuraFontSize="20.25" TextAuraForeground="Red" TextAuraName="deathSen" TextAuraExpression="死刑  ${name}" TextAuraXIniExpression="1056" TextAuraYIniExpression="480" TextAuraWIniExpression="166" TextAuraHIniExpression="64" TextAuraOIniExpression="100" TextAuraFontName="宋体" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="3" LogLevel="-1" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="deathSen" TextAuraFontName="宋体" ActionType="TextAura" ExecutionDelayExpression="8000">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="Shadow Cleave 八方放影子" Id="4b1c233f-45d2-4bc6-9d1e-9a5181e5bd36" RegularExpression="] 00:282b:The Shadowkeeper readies Shadow Cleave">
             <Actions>
               <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="八方放影子" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="darkness unleash 点名分摊" Id="c7a96f1a-4a19-4774-90a3-aca750fb55a7" RegularExpression="] 00:282b:The Shadowkeeper readies Darkness Unleashed">
             <Actions>
               <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="分摊分摊" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+        </Triggers>
+      </Folder>
+      <Folder Id="06c39523-eea1-4d80-af00-c8c89c730063" Name="E11s" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="5663我怀疑是火八方" Id="bab259fb-20c6-4414-96af-e45defeddcc6" RegularExpression="] 14:5663:Fatebreaker starts using Elemental Break on Fatebreaker">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="八方后两两分摊" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="5666我怀疑是雷八方" Id="ab20ceb9-6715-40df-877e-47845de68d81" RegularExpression="] 14:5666:Fatebreaker starts using Elemental Break on Fatebreaker">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="八方后分散" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="5654我猜是雷直线" Id="0ed57cb5-9c54-45af-91c8-66376fe4afe1" RegularExpression="] 14:5654:Fatebreaker starts using Burnt Strike on Fatebreaker">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="直线钢铁" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="565B我怀疑是雷点名" Id="85427bef-1986-48c0-93b4-90daf3467da8" RegularExpression="] 14:565B:Fatebreaker starts using Bound Of Faith on Fatebreaker">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="雷点名" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="AOE" Id="a7a3d102-1290-4a19-845d-836e49fa8752" RegularExpression="] 14:56A4:Fatebreaker starts using Burnished Glory on Fatebreaker">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="AOE减伤" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="5652 火直线" Id="90f554ea-3f99-4cb4-a9dc-76e27be0b393" RegularExpression="] 14:5652:Fatebreaker starts using Burnt Strike on Fatebreaker">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="直线击退" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
