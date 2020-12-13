@@ -119,9 +119,11 @@
             <Actions>
               <Action OrderNumber="1" LogLevel="-1" TextAuraEffect="Bold" TextAuraFontSize="20.25" TextAuraForeground="Red" TextAuraName="safezone" TextAuraExpression="雷圈安全" TextAuraXIniExpression="1056" TextAuraYIniExpression="480" TextAuraWIniExpression="166" TextAuraHIniExpression="64" TextAuraOIniExpression="100" TextAuraFontName="宋体" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="2" LogLevel="-1" TextAuraOp="DeactivateAura" TextAuraEffect="Bold" TextAuraFontSize="20.25" TextAuraForeground="Red" TextAuraName="safezone" TextAuraExpression="雷圈安全" TextAuraXIniExpression="1056" TextAuraYIniExpression="480" TextAuraWIniExpression="166" TextAuraHIniExpression="64" TextAuraOIniExpression="100" TextAuraFontName="宋体" ActionType="TextAura" ExecutionDelayExpression="20000">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -183,109 +185,274 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Name="点名标点" Id="526ac997-f28f-46f0-8a2e-95a48666ee45" RegularExpression="] 00:112f:(?&lt;name&gt;.*?) suffers the effect of Prey">
+          <Trigger Enabled="true" Name="点名标点" Id="526ac997-f28f-46f0-8a2e-95a48666ee45" RegularExpression="] 00:112f:(?&lt;name&gt;.*?)Phoenix suffers the effect of Prey">
             <Actions>
-              <Action OrderNumber="1" KeyPressExpression="{F5}" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+              <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressExpression="{F5}" KeyPressCode="116" KeyPressWindow="FINAL FANTASY XIV" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${ffxivparty_order[1]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
                 <Conditions />
               </Action>
-              <Action OrderNumber="2" KeyPressExpression="{F6}" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+              <Action OrderNumber="2" KeypressType="WindowMessage" KeyPressExpression="{F6}" KeyPressCode="117" KeyPressWindow="FINAL FANTASY XIV" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${ffxivparty_order[2]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
                 <Conditions />
               </Action>
-              <Action OrderNumber="3" KeyPressExpression="{F7}" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+              <Action OrderNumber="3" KeypressType="WindowMessage" KeyPressExpression="{F7}" KeyPressCode="118" KeyPressWindow="FINAL FANTASY XIV" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${ffxivparty_order[3]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
                 <Conditions />
               </Action>
-              <Action OrderNumber="4" KeyPressExpression="{F8}" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+              <Action OrderNumber="4" KeypressType="WindowMessage" KeyPressExpression="{F8}" KeyPressCode="119" KeyPressWindow="FINAL FANTASY XIV" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${ffxivparty_order[4]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
                 <Conditions />
               </Action>
-              <Action OrderNumber="5" KeyPressExpression="{F9}" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+              <Action OrderNumber="5" KeypressType="WindowMessage" KeyPressExpression="{F9}" KeyPressCode="120" KeyPressWindow="FINAL FANTASY XIV" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${ffxivparty_order[5]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
                 <Conditions />
               </Action>
-              <Action OrderNumber="6" KeyPressExpression="{F10}" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+              <Action OrderNumber="6" KeypressType="WindowMessage" KeyPressExpression="{F10}" KeyPressCode="121" KeyPressWindow="FINAL FANTASY XIV" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${ffxivparty_order[6]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
                 <Conditions />
               </Action>
-              <Action OrderNumber="7" KeyPressExpression="{F11}" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+              <Action OrderNumber="7" KeypressType="WindowMessage" KeyPressExpression="{F11}" KeyPressCode="122" KeyPressWindow="FINAL FANTASY XIV" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${ffxivparty_order[7]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
                 <Conditions />
               </Action>
-              <Action OrderNumber="8" KeyPressExpression="{F12}" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+              <Action OrderNumber="8" KeypressType="WindowMessage" KeyPressExpression="{F12}" KeyPressCode="123" KeyPressWindow="FINAL FANTASY XIV" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${ffxivparty_order[8]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
                 <Conditions />
               </Action>
-              <Action OrderNumber="9" LogLevel="-1" UseTTSTextExpression="${name}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+              <Action OrderNumber="9" LogLevel="-1" TextAuraAlignment="MiddleLeft" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraForeground="Red" TextAuraBackground="Yellow" TextAuraName="dianming" TextAuraExpression="${name}" TextAuraXIniExpression="1087" TextAuraYIniExpression="711" TextAuraWIniExpression="136" TextAuraHIniExpression="42" TextAuraOIniExpression="100" TextAuraFontName="宋体" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="10" KeyPressExpression="{0}" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="10000">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="11" LogLevel="-1" TextAuraOp="DeactivateAura" TextAuraAlignment="MiddleLeft" TextAuraEffect="Bold" TextAuraFontSize="24" TextAuraForeground="Red" TextAuraName="dianming" TextAuraExpression="${name}" TextAuraXIniExpression="1087" TextAuraYIniExpression="711" TextAuraWIniExpression="136" TextAuraHIniExpression="42" TextAuraOIniExpression="100" TextAuraFontName="宋体" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="队友自动排序" Id="e4f3cffc-4a65-42db-95ed-826df947c6b8" RegularExpression="">
+          <Trigger Enabled="false" Name="队友自动排序" Id="e4f3cffc-4a65-42db-95ed-826df947c6b8" RegularExpression="Duty registration complete">
             <Actions>
               <Action OrderNumber="1" ListVariableName="ffxivparty_order" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" ListVariableOp="Push" ListVariableName="ffxivparty_order" ListVariableExpression="${_ffxivparty[2].name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable" Asynchronous="False">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="3" ListVariableOp="Push" ListVariableName="ffxivparty_order" ListVariableExpression="${_ffxivparty[3].name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable" Asynchronous="False">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="4" ListVariableOp="Push" ListVariableName="ffxivparty_order" ListVariableExpression="${_ffxivparty[4].name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable" Asynchronous="False">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="5" ListVariableOp="Push" ListVariableName="ffxivparty_order" ListVariableExpression="${_ffxivparty[5].name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable" Asynchronous="False">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="6" ListVariableOp="Push" ListVariableName="ffxivparty_order" ListVariableExpression="${_ffxivparty[6].name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable" Asynchronous="False">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="7" ListVariableOp="Push" ListVariableName="ffxivparty_order" ListVariableExpression="${_ffxivparty[7].name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable" Asynchronous="False">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="8" ListVariableOp="Push" ListVariableName="ffxivparty_order" ListVariableExpression="${_ffxivparty[8].name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable" Asynchronous="False">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="9" ListVariableOp="SortFfxivPartyAsc" ListVariableName="ffxivparty_order" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="10" ListVariableOp="Insert" ListVariableName="ffxivparty_order" ListVariableExpression="${_ffxivparty[1].name}" ListVariableIndex="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="11" LogLevel="-1" UseTTSTextExpression="ch" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+        </Triggers>
+      </Folder>
+      <Folder Id="fe00a6cc-2003-4176-88b4-3da521865423" Name="E12s" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="Junction titan" Id="0797546a-6366-4791-b7c8-c7cadb7107cd" RegularExpression="] 14:5895:Eden's Promise starts using Junction Titan on Eden's Promise">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="泰坦分摊" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" LogLevel="-1" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraForeground="Red" TextAuraBackground="#FF8000" TextAuraName="junction" TextAuraExpression="泰坦分摊" TextAuraXIniExpression="1078" TextAuraYIniExpression="607" TextAuraWIniExpression="83" TextAuraHIniExpression="33" TextAuraOIniExpression="100" TextAuraFontName="SimSun" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Junction Shiva" Id="3f7b1540-1830-460e-afab-adc438b132e5" RegularExpression="] 14:5894:Eden's Promise starts using Junction Shiva on Eden's Promise">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="希瓦分散" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" LogLevel="-1" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraForeground="#0000A0" TextAuraBackground="#80FFFF" TextAuraName="junction" TextAuraExpression="希瓦分散" TextAuraXIniExpression="1078" TextAuraYIniExpression="607" TextAuraWIniExpression="79" TextAuraHIniExpression="33" TextAuraOIniExpression="100" TextAuraFontName="SimSun" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Cast" Id="4704965f-e682-41f4-a5da-cf24a91eb399" RegularExpression="] 14:4E43:Eden's Promise starts using Cast on Eden's Promise">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="蛮神技" TextAuraFontSize="9" TextAuraFontName="SimSun" Enabled="False" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" LogLevel="-1" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="junction" TextAuraFontName="SimSun" ActionType="TextAura" ExecutionDelayExpression="8000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="火神技能" Id="2cb1210f-d546-49bc-9d0e-9931b3dadc2b" RegularExpression="] 14:4E45:Eden's Promise starts using Conflag Strike on Eden's Promise">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="火神" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" LogLevel="-1" TextAuraFontSize="12" TextAuraForeground="White" TextAuraBackground="Red" TextAuraOutline="Yellow" TextAuraName="fire" TextAuraExpression="火神" TextAuraXIniExpression="1051" TextAuraYIniExpression="575" TextAuraWIniExpression="46" TextAuraHIniExpression="28" TextAuraOIniExpression="100" TextAuraFontName="SimSun" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" LogLevel="-1" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="fire" TextAuraFontName="SimSun" ActionType="TextAura" ExecutionDelayExpression="5000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="重制" Id="3dfeb2b9-024f-4bde-9868-526b8cc6c792" RegularExpression="Battle commencing in 15 seconds">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" TextAuraOp="DeactivateAllAura" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="雷神技能" Id="e73a7f54-2570-4823-98f9-08c04800e727" RegularExpression="] 14:4E47:Eden's Promise starts using Judgment Jolt on Eden's Promise">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraForeground="Yellow" TextAuraBackground="#400080" TextAuraName="thunder" TextAuraExpression="雷神" TextAuraXIniExpression="1097" TextAuraYIniExpression="574" TextAuraWIniExpression="40" TextAuraHIniExpression="30" TextAuraOIniExpression="100" TextAuraFontName="SimSun" TriggerText="thunder" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="雷神" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" LogLevel="-1" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="thunder" TextAuraFontName="SimSun" ActionType="TextAura" ExecutionDelayExpression="5000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="水神技能" Id="d2185106-b70a-4f0d-87d5-3038151bc383" RegularExpression="] 14:4E44:Eden's Promise starts using Temporary Current on Eden's Promise" PeriodRefire="Deny">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraBackground="#0080FF" TextAuraName="water" TextAuraExpression="水神" TextAuraXIniExpression="1137" TextAuraYIniExpression="573" TextAuraWIniExpression="71" TextAuraHIniExpression="32" TextAuraOIniExpression="100" TextAuraFontName="SimSun" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="水神" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS" ExecutionDelayExpression="500">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" LogLevel="-1" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="water" TextAuraFontName="SimSun" ActionType="TextAura" ExecutionDelayExpression="5000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="左刀右右右" Id="b3043764-ce32-4af5-be70-2885a2c21b9b" RegularExpression="] 14:58AE:Eden's Promise starts using Rapturous Reach on Eden's Promise">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="右右右" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="右刀左左左" Id="62ac8ad6-7160-4517-b2cb-c912a3cc6f61" RegularExpression="] 14:58AD:Eden's Promise starts using Rapturous Reach on Eden's Promise">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="左左左" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="DD" Id="d98799af-fb85-4eb0-a1d7-6d7b17917dde" RegularExpression="] 14:5896:Eden's Promise starts using Diamond Dust on Eden's Promise">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="病毒病毒" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="风神技能" Id="0ca68730-9e02-4b95-936f-d89ae4e473a0" RegularExpression="] 14:4E46:Eden's Promise starts using Ferostorm on Eden's Promise">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="风神" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" LogLevel="-1" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraBackground="Lime" TextAuraName="wind" TextAuraExpression="风神" TextAuraXIniExpression="1045" TextAuraYIniExpression="547" TextAuraWIniExpression="55" TextAuraHIniExpression="28" TextAuraOIniExpression="100" TextAuraFontName="SimSun" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" LogLevel="-1" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="wind" TextAuraFontName="SimSun" ActionType="TextAura" ExecutionDelayExpression="5000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="手测试2" Id="11bb992d-00f1-4a80-849d-c0807e0e55b2" RegularExpression="] 14:58B4:Guardian Of Eden starts using Palm Of Temperance on Guardian Of Eden">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="2点击退" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" LogLevel="-1" TextAuraEffect="Bold" TextAuraFontSize="18" TextAuraForeground="Red" TextAuraBackground="#FFFF80" TextAuraName="jitui" TextAuraExpression="2点" TextAuraXIniExpression="937" TextAuraYIniExpression="715" TextAuraWIniExpression="102" TextAuraHIniExpression="60" TextAuraOIniExpression="100" TextAuraFontName="SimSun" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" LogLevel="-1" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="jitui" TextAuraFontName="SimSun" ActionType="TextAura" ExecutionDelayExpression="8000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="击退plam 3点" Id="14efd8d9-052b-4080-afaf-fab5d4a017d9" RegularExpression="] 14:58B5:Guardian Of Eden starts using Palm Of Temperance on Guardian Of Eden">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="3点击退" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" LogLevel="-1" TextAuraEffect="Bold" TextAuraFontSize="18" TextAuraForeground="Red" TextAuraBackground="#FFFF80" TextAuraName="jitui" TextAuraExpression="3点" TextAuraXIniExpression="937" TextAuraYIniExpression="715" TextAuraWIniExpression="102" TextAuraHIniExpression="60" TextAuraOIniExpression="100" TextAuraFontName="SimSun" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" LogLevel="-1" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="jitui" TextAuraFontName="SimSun" ActionType="TextAura" ExecutionDelayExpression="8000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="防击退" Id="41a2c2fc-8fa2-415e-86c0-0d06747d2ed5" RegularExpression="] 14:58B8:Eden's Promise starts using Laser Eye on Eden's Promise">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="减伤减伤" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS" ExecutionDelayExpression="6000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="防击退" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS" ExecutionDelayExpression="3000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
           </Trigger>
         </Triggers>
       </Folder>
