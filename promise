@@ -39,7 +39,7 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder Id="06c39523-eea1-4d80-af00-c8c89c730063" Name="E11s" Enabled="true">
+      <Folder Id="06c39523-eea1-4d80-af00-c8c89c730063" Name="E11s" Enabled="false">
         <Folders />
         <Triggers>
           <Trigger Enabled="true" Name="5663火八方" Id="bab259fb-20c6-4414-96af-e45defeddcc6" RegularExpression="] 14:5663:Fatebreaker starts using Elemental Break on Fatebreaker">
@@ -119,11 +119,9 @@
             <Actions>
               <Action OrderNumber="1" LogLevel="-1" TextAuraEffect="Bold" TextAuraFontSize="20.25" TextAuraForeground="Red" TextAuraName="safezone" TextAuraExpression="雷圈安全" TextAuraXIniExpression="1056" TextAuraYIniExpression="480" TextAuraWIniExpression="166" TextAuraHIniExpression="64" TextAuraOIniExpression="100" TextAuraFontName="宋体" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" LogLevel="-1" TextAuraOp="DeactivateAura" TextAuraEffect="Bold" TextAuraFontSize="20.25" TextAuraForeground="Red" TextAuraName="safezone" TextAuraExpression="雷圈安全" TextAuraXIniExpression="1056" TextAuraYIniExpression="480" TextAuraWIniExpression="166" TextAuraHIniExpression="64" TextAuraOIniExpression="100" TextAuraFontName="宋体" ActionType="TextAura" ExecutionDelayExpression="20000">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -185,67 +183,56 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Name="点名标点" Id="526ac997-f28f-46f0-8a2e-95a48666ee45" RegularExpression="] 00:112f:(?&lt;name&gt;.*?)Phoenix suffers the effect of Prey">
+          <Trigger Enabled="true" Name="点名标点" Id="526ac997-f28f-46f0-8a2e-95a48666ee45" RegularExpression="] 00:112f:(?&lt;name&gt;.*?) suffers the effect of Prey">
             <Actions>
               <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressExpression="{F5}" KeyPressCode="116" KeyPressWindow="FINAL FANTASY XIV" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${ffxivparty_order[1]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="2" KeypressType="WindowMessage" KeyPressExpression="{F6}" KeyPressCode="117" KeyPressWindow="FINAL FANTASY XIV" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${ffxivparty_order[2]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="3" KeypressType="WindowMessage" KeyPressExpression="{F7}" KeyPressCode="118" KeyPressWindow="FINAL FANTASY XIV" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${ffxivparty_order[3]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="4" KeypressType="WindowMessage" KeyPressExpression="{F8}" KeyPressCode="119" KeyPressWindow="FINAL FANTASY XIV" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${ffxivparty_order[4]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="5" KeypressType="WindowMessage" KeyPressExpression="{F9}" KeyPressCode="120" KeyPressWindow="FINAL FANTASY XIV" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${ffxivparty_order[5]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="6" KeypressType="WindowMessage" KeyPressExpression="{F10}" KeyPressCode="121" KeyPressWindow="FINAL FANTASY XIV" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${ffxivparty_order[6]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="7" KeypressType="WindowMessage" KeyPressExpression="{F11}" KeyPressCode="122" KeyPressWindow="FINAL FANTASY XIV" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${ffxivparty_order[7]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="8" KeypressType="WindowMessage" KeyPressExpression="{F12}" KeyPressCode="123" KeyPressWindow="FINAL FANTASY XIV" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${ffxivparty_order[8]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="9" LogLevel="-1" TextAuraAlignment="MiddleLeft" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraForeground="Red" TextAuraBackground="Yellow" TextAuraName="dianming" TextAuraExpression="${name}" TextAuraXIniExpression="1087" TextAuraYIniExpression="711" TextAuraWIniExpression="136" TextAuraHIniExpression="42" TextAuraOIniExpression="100" TextAuraFontName="宋体" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="10" KeyPressExpression="{0}" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="10000">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="11" LogLevel="-1" TextAuraOp="DeactivateAura" TextAuraAlignment="MiddleLeft" TextAuraEffect="Bold" TextAuraFontSize="24" TextAuraForeground="Red" TextAuraName="dianming" TextAuraExpression="${name}" TextAuraXIniExpression="1087" TextAuraYIniExpression="711" TextAuraWIniExpression="136" TextAuraHIniExpression="42" TextAuraOIniExpression="100" TextAuraFontName="宋体" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -291,7 +278,261 @@
         </Triggers>
       </Folder>
       <Folder Id="fe00a6cc-2003-4176-88b4-3da521865423" Name="E12s" Enabled="true">
-        <Folders />
+        <Folders>
+          <Folder Id="33eaba74-471b-48b0-b1c2-249b1669a0d4" Name="元素组合技" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Name="元素火" Id="bc6343a8-dee2-4ca7-9826-8950b21a4a05" RegularExpression="^\[..:..:..\....\] 14:4E45">
+                <Actions>
+                  <Action OrderNumber="1" LogLevel="-1" VariableOp="SetNumeric" VariableName="Fire" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="元素风" Id="06c84564-8380-477b-805b-e56c94592735" RegularExpression="^\[..:..:..\....\] 14:4E46">
+                <Actions>
+                  <Action OrderNumber="1" LogLevel="-1" VariableOp="SetNumeric" VariableName="Wind" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="元素雷" Id="d131678d-f8bd-4a5e-8d56-1a0b29e84b0d" RegularExpression="^\[..:..:..\....\] 14:4E47">
+                <Actions>
+                  <Action OrderNumber="1" LogLevel="-1" VariableOp="SetNumeric" VariableName="Thunder" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="元素水" Id="31107866-f103-40e0-a894-aacf3cd66098" RegularExpression="^\[..:..:..\....\] 14:4E44">
+                <Actions>
+                  <Action OrderNumber="1" LogLevel="-1" VariableOp="SetNumeric" VariableName="Water" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="初始化参数" Id="643c691a-b409-41aa-bf73-a2608fd0f017" RegularExpression="^\[..:..:..\....\] 00:0039:(战斗开始|Engage|戦闘開始)">
+                <Actions>
+                  <Action OrderNumber="1" LogLevel="-1" VariableName="Fire" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="2" LogLevel="-1" VariableName="Wind" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="3" LogLevel="-1" VariableName="Thunder" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="4" LogLevel="-1" VariableName="Water" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="组合技播报2" Id="3d615ee1-5410-4642-b78b-55bbe6314741" RegularExpression="^\[..:..:..\....\] 14:5893">
+                <Actions>
+                  <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="斜点内侧" UseTTSRateExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="3000">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:Water}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:Wind}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="BD内侧" UseTTSRateExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:Water}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:Fire}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="3" LogLevel="-1" UseTTSTextExpression="斜点外侧" UseTTSRateExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:Thunder}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:Wind}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="4" LogLevel="-1" UseTTSTextExpression="BD外侧" UseTTSRateExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:Thunder}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:Fire}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="5" LogLevel="-1" UseTTSTextExpression="AC外侧" UseTTSRateExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:Water}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:Thunder}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="6" LogLevel="-1" VariableName="Fire" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="1000">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="7" LogLevel="-1" VariableName="Wind" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="8" LogLevel="-1" VariableName="Thunder" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="9" LogLevel="-1" VariableName="Water" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="组合技播报1" Id="5a502c36-8656-4351-9afd-ebb86fc0e0ff" RegularExpression="^\[..:..:..\....\] 14:4E43">
+                <Actions>
+                  <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="斜点内侧" UseTTSVolumeExpression="200" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:Water}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:Wind}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="BD内侧" UseTTSVolumeExpression="200" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:Water}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:Fire}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="3" LogLevel="-1" UseTTSTextExpression="斜点外侧" UseTTSVolumeExpression="200" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:Thunder}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:Wind}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="4" LogLevel="-1" UseTTSTextExpression="BD外侧" UseTTSVolumeExpression="200" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:Thunder}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:Fire}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="5" LogLevel="-1" UseTTSTextExpression="AC外侧" UseTTSVolumeExpression="200" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:Water}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:Thunder}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="6" LogLevel="-1" VariableName="Fire" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="1000">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="7" LogLevel="-1" VariableName="Wind" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="8" LogLevel="-1" VariableName="Thunder" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="9" LogLevel="-1" VariableName="Water" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="AOE" Id="671b60d6-87f5-4aea-93b7-8a32add26d84" RegularExpression="^\[..:..:..\....\] 14:(58A8|589F)">
+                <Actions>
+                  <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="AOE" UseTTSRateExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="门神：双T死刑" Id="ef856e3e-9db6-40a7-a82a-0f3f2749e625" RegularExpression="^\[..:..:..\....\] 14:58A9">
+                <Actions>
+                  <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="双替死刑" UseTTSRateExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="门神运动会：巨人阶段" Id="d09b51c8-1685-4ef3-9722-00f503792233" RegularExpression="^\[..:..:..\....\] 03:.+:Added new combatant (創られた男|Chiseled Sculpture)">
+                <Actions>
+                  <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="巨人阶段" UseTTSRateExpression="" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="一" UseTTSRateExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="9000">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="3" LogLevel="-1" UseTTSTextExpression="二" UseTTSRateExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="8000">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="4" LogLevel="-1" UseTTSTextExpression="三" UseTTSRateExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="4000">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="5" LogLevel="-1" UseTTSTextExpression="四" UseTTSRateExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="4000">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="门神运动会：狮子阶段" Id="96440207-fca9-4bcb-a592-582b23e34a58" RegularExpression="^\[..:..:..\....\] 03:.+:Added new combatant (創られた獅子王|Regal Sculpture)">
+                <Actions>
+                  <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="狮子阶段" UseTTSRateExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="一" UseTTSRateExpression="3" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="8000">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="3" LogLevel="-1" UseTTSTextExpression="防击退" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="4000">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="4" LogLevel="-1" UseTTSTextExpression="二" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="5000">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="5" LogLevel="-1" UseTTSTextExpression="三" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="10000">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+            </Triggers>
+          </Folder>
+        </Folders>
         <Triggers>
           <Trigger Enabled="true" Name="Junction titan" Id="0797546a-6366-4791-b7c8-c7cadb7107cd" RegularExpression="] 14:5895:Eden's Promise starts using Junction Titan on Eden's Promise">
             <Actions>
@@ -328,7 +569,7 @@
           </Trigger>
           <Trigger Enabled="true" Name="火神技能" Id="2cb1210f-d546-49bc-9d0e-9931b3dadc2b" RegularExpression="] 14:4E45:Eden's Promise starts using Conflag Strike on Eden's Promise">
             <Actions>
-              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="火神" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="火神" TextAuraFontSize="9" TextAuraFontName="SimSun" Enabled="False" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
               <Action OrderNumber="2" LogLevel="-1" TextAuraFontSize="12" TextAuraForeground="White" TextAuraBackground="Red" TextAuraOutline="Yellow" TextAuraName="fire" TextAuraExpression="火神" TextAuraXIniExpression="1051" TextAuraYIniExpression="575" TextAuraWIniExpression="46" TextAuraHIniExpression="28" TextAuraOIniExpression="100" TextAuraFontName="SimSun" ActionType="TextAura">
@@ -353,7 +594,7 @@
               <Action OrderNumber="1" LogLevel="-1" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraForeground="Yellow" TextAuraBackground="#400080" TextAuraName="thunder" TextAuraExpression="雷神" TextAuraXIniExpression="1097" TextAuraYIniExpression="574" TextAuraWIniExpression="40" TextAuraHIniExpression="30" TextAuraOIniExpression="100" TextAuraFontName="SimSun" TriggerText="thunder" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="雷神" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS" ExecutionDelayExpression="1000">
+              <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="雷神" TextAuraFontSize="9" TextAuraFontName="SimSun" Enabled="False" ActionType="UseTTS" ExecutionDelayExpression="800">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
               <Action OrderNumber="3" LogLevel="-1" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="thunder" TextAuraFontName="SimSun" ActionType="TextAura" ExecutionDelayExpression="5000">
@@ -367,7 +608,7 @@
               <Action OrderNumber="1" LogLevel="-1" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraBackground="#0080FF" TextAuraName="water" TextAuraExpression="水神" TextAuraXIniExpression="1137" TextAuraYIniExpression="573" TextAuraWIniExpression="71" TextAuraHIniExpression="32" TextAuraOIniExpression="100" TextAuraFontName="SimSun" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="水神" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS" ExecutionDelayExpression="500">
+              <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="水神" TextAuraFontSize="9" TextAuraFontName="SimSun" Enabled="False" ActionType="UseTTS" ExecutionDelayExpression="400">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
               <Action OrderNumber="3" LogLevel="-1" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="water" TextAuraFontName="SimSun" ActionType="TextAura" ExecutionDelayExpression="5000">
@@ -396,14 +637,13 @@
             <Actions>
               <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="病毒病毒" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
           <Trigger Enabled="true" Name="风神技能" Id="0ca68730-9e02-4b95-936f-d89ae4e473a0" RegularExpression="] 14:4E46:Eden's Promise starts using Ferostorm on Eden's Promise">
             <Actions>
-              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="风神" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="风神" TextAuraFontSize="9" TextAuraFontName="SimSun" Enabled="False" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
               <Action OrderNumber="2" LogLevel="-1" TextAuraEffect="Bold" TextAuraFontSize="12" TextAuraBackground="Lime" TextAuraName="wind" TextAuraExpression="风神" TextAuraXIniExpression="1045" TextAuraYIniExpression="547" TextAuraWIniExpression="55" TextAuraHIniExpression="28" TextAuraOIniExpression="100" TextAuraFontName="SimSun" ActionType="TextAura">
@@ -443,12 +683,129 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Name="防击退" Id="41a2c2fc-8fa2-415e-86c0-0d06747d2ed5" RegularExpression="] 14:58B8:Eden's Promise starts using Laser Eye on Eden's Promise">
+          <Trigger Enabled="false" Name="防击退" Id="41a2c2fc-8fa2-415e-86c0-0d06747d2ed5" RegularExpression="] 14:58B8:Eden's Promise starts using Laser Eye on Eden's Promise">
             <Actions>
               <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="减伤减伤" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS" ExecutionDelayExpression="6000">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
               <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="防击退" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS" ExecutionDelayExpression="3000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+        </Triggers>
+      </Folder>
+      <Folder Id="dfc1f872-37a5-4feb-83a5-d9d8360b30f5" Name="E12s本体" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="false" Name="一血" Id="67982ec9-f388-4a1f-a716-e0c10e9cf451" RegularExpression="] 14:58EF:Oracle Of Darkness starts using Hell's Judgment on Oracle Of Darkness">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="一血AOE" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="AOE" Id="f94511b1-2d2e-4b52-a98d-67532a2e60d2" RegularExpression="] 14:58F0:Oracle Of Darkness starts using Shockwave Pulsar on Oracle Of Darkness">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="AOE" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="一运" Id="9a8ddf56-5424-48fc-83bb-68bdbc3557c4" RegularExpression="] 14:58E0:Oracle Of Darkness starts using Basic Relativity on Oracle Of Darkness">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="一运，减伤" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="一运地火" Id="db2c7667-5d3d-4169-9bd5-f8b4c015ffe4" RegularExpression="] 14:58E5:Oracle Of Darkness starts using Singular Apocalypse on Oracle Of Darkness">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="一运地火，注意盖亚跳" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="一运后的跳" Id="ccf3c6d8-201b-4607-92bd-98595a8443be" RegularExpression="] 14:58C2:Oracle Of Darkness starts using Cataclysm on Unknown">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="准备跳了" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="死刑black halo" Id="4ddda02e-d86e-4402-b2b8-33bf8f6cc0bd" RegularExpression="] 14:58C7:Oracle Of Darkness starts using Black Halo on (?&lt;name&gt;.*?)">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="死刑顺劈" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="shell crusher" Id="31614061-0d2d-4409-a66c-09e6b7b0405e" RegularExpression="] 14:58C3:Oracle Of Darkness starts using Shell Crusher on Oracle Of Darkness">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="集合分摊" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="dark water 35.96秒" Id="7ba81324-a791-4e25-a164-a393ea668ece" RegularExpression="] 1A:106E2F55:Dust Stan gains the effect of Spell-In-Waiting: Dark Water III from  for 35.96 Seconds">
+            <Actions />
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="先分摊" Id="ef47cc07-5a80-416b-87fc-eddf7dc90497" RegularExpression="] 1A:106E2F55:Dust Stan gains the effect of Spell-In-Waiting: Dark Water III from  for 11.96 Seconds">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="先分摊" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="分摊分摊" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS" ExecutionDelayExpression="5000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" LogLevel="-1" UseTTSTextExpression="击退后分散" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS" ExecutionDelayExpression="16000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="后分摊" Id="5e63ae45-6e88-49e8-ae95-035223bbc4b0" RegularExpression="] 1A:106E2F55:Dust Stan gains the effect of Spell-In-Waiting: Dark Water III from  for 16.96 Seconds">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="先分散后分摊" TextAuraFontSize="9" TextAuraFontName="SimSun" Enabled="False" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="击退后分摊" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS" ExecutionDelayExpression="8000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="盖亚跳" Id="210e071d-79b8-4646-b0ff-277b1b9f9d21" RegularExpression="] 14:58BE:Oracle Of Darkness starts using Darkest Dance on Oracle Of Darkness">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="注意击退" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Spirit Taker" Id="a79a60fa-16ff-4510-9eff-f76877064751" RegularExpression="] 14:58C4:Oracle Of Darkness starts using Spirit Taker on Oracle Of Darkness">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="盖亚跳" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" LogLevel="-1" UseTTSTextExpression="跳了跳了" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS" ExecutionDelayExpression="4000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="somber dance" Id="b406ead6-5763-4e43-96f8-8b5bac2eccc2" RegularExpression="] 14:58BD:Oracle Of Darkness starts using Somber Dance on Oracle Of Darkness">
+            <Actions>
+              <Action OrderNumber="1" LogLevel="-1" UseTTSTextExpression="远近跳" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
