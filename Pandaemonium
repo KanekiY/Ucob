@@ -2,7 +2,7 @@
 <TriggernometryExport Version="1">
   <ExportedFolder Id="54449434-2a1e-4598-a7c4-6fb60748bbc6" Name="6.0 普通" Enabled="true">
     <Folders>
-      <Folder ZoneFilterEnabled="True" Id="6a391350-030e-4796-bcec-7dec3a4782e4" ZoneFilterRegularExpression="Asphodelos The Second Circle" Name="2层" Enabled="true">
+      <Folder ZoneFilterEnabled="True" Id="6a391350-030e-4796-bcec-7dec3a4782e4" ZoneFilterRegularExpression="Asphodelos: The Second Circle" Name="2层" Enabled="true">
         <Folders />
         <Triggers>
           <Trigger Enabled="true" Name="predator那个分摊" Id="e7ca9c00-0dcc-43ef-b245-f94144186448" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:680A:">
@@ -87,7 +87,7 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder ZoneFilterEnabled="True" Id="83045ff8-e610-4289-9825-f6115f84ff0c" ZoneFilterRegularExpression="Asphodelos The Third Circle" Name="三层" Enabled="true">
+      <Folder ZoneFilterEnabled="True" Id="83045ff8-e610-4289-9825-f6115f84ff0c" ZoneFilterRegularExpression="Asphodelos: The Third Circle" Name="三层" Enabled="true">
         <Folders />
         <Triggers>
           <Trigger Enabled="true" Name="left cinderwing" Id="e19b5bd6-6a78-4f49-8dcd-f78b03d6ef46" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:66B5:">
@@ -172,7 +172,7 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder Id="9b9cc3c9-36b7-40f4-b954-6ddd3915e6ea" Name="1层" Enabled="true">
+      <Folder ZoneFilterEnabled="True" Id="9b9cc3c9-36b7-40f4-b954-6ddd3915e6ea" ZoneFilterRegularExpression="Asphodelos: The First Circle" Name="1层" Enabled="true">
         <Folders />
         <Triggers>
           <Trigger Enabled="true" Name="slam shut" Id="c532fb4c-4127-4274-87d0-e9006564df58" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:65EA:">
@@ -222,6 +222,21 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+        </Triggers>
+      </Folder>
+      <Folder ZoneFilterEnabled="True" Id="d4c4470a-2f92-4115-a4c5-042985bbc171" ZoneFilterRegularExpression="Asphodelos: The Fourth Circle" Name="四层" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="hell Skewer" Id="aa50ecb7-511b-4105-a705-862154f781c0" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6A4F:">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="远离正面" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
