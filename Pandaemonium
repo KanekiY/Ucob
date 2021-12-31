@@ -17,6 +17,7 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="人群集合引导泥巴" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -88,27 +89,44 @@
         </Triggers>
       </Folder>
       <Folder ZoneFilterEnabled="True" Id="83045ff8-e610-4289-9825-f6115f84ff0c" ZoneFilterRegularExpression="Asphodelos: The Third Circle" Name="三层" Enabled="true">
-        <Folders />
+        <Folders>
+          <Folder Id="ae0ede4f-adb1-4306-a1ae-d102c7615d18" Name="plume" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Name="experimental fireplume 九连环" Id="a33587c8-859c-438e-baa4-2a56b658661c" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6698:">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="九连环" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Name="experimental charplume 分散" Id="60b921fb-a10f-4ab7-9375-de0fc8f74bdc" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:669C:">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="分散" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Name="experimental fireplume 钢铁" Id="3021bcbb-9387-4e54-acfc-0579d6070cfe" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6696:">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="钢铁" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+            </Triggers>
+          </Folder>
+        </Folders>
         <Triggers>
           <Trigger Enabled="true" Name="left cinderwing" Id="e19b5bd6-6a78-4f49-8dcd-f78b03d6ef46" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:66B5:">
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="右右右" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-            </Actions>
-            <Condition Enabled="false" Grouping="Or" />
-          </Trigger>
-          <Trigger Enabled="true" Name="experimental fireplume 九连环" Id="a33587c8-859c-438e-baa4-2a56b658661c" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6698:">
-            <Actions>
-              <Action OrderNumber="1" UseTTSTextExpression="九连环" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-            </Actions>
-            <Condition Enabled="false" Grouping="Or" />
-          </Trigger>
-          <Trigger Enabled="true" Name="experimental fireplume 钢铁" Id="60b921fb-a10f-4ab7-9375-de0fc8f74bdc" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6696:">
-            <Actions>
-              <Action OrderNumber="1" UseTTSTextExpression="钢铁" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
@@ -124,8 +142,9 @@
           </Trigger>
           <Trigger Enabled="true" Name="searing breeze" Id="76e2e894-83df-46d3-8450-0d1234ddc45d" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:66B6:">
             <Actions>
-              <Action OrderNumber="1" UseTTSTextExpression="引导泥巴" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+              <Action OrderNumber="1" UseTTSTextExpression="集合引导泥巴" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -154,10 +173,11 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Name="devouring Brand" Id="3cb7e80d-5274-4b3e-be59-0c8b1e574f7f" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:669E:">
+          <Trigger Enabled="true" Name="trail of condemnation" Id="3cb7e80d-5274-4b3e-be59-0c8b1e574f7f" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:66AD:">
             <Actions>
-              <Action OrderNumber="1" UseTTSTextExpression="十字火" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+              <Action OrderNumber="1" UseTTSTextExpression="躲避冲锋" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -169,6 +189,16 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="devouring Brand" Id="6773f646-ca6f-454c-9aac-8073feb70b77" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:669E:">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="十字火" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
@@ -226,11 +256,191 @@
         </Triggers>
       </Folder>
       <Folder ZoneFilterEnabled="True" Id="d4c4470a-2f92-4115-a4c5-042985bbc171" ZoneFilterRegularExpression="Asphodelos: The Fourth Circle" Name="四层" Enabled="true">
-        <Folders />
+        <Folders>
+          <Folder Id="f815c235-c251-40e2-9dcf-013c18f4270b" Name="pinax" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Name="acid Pinax" Id="c1dba71f-44da-4166-8d8b-0b495d2a1e4a" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6A3C:">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="毒分散" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="lava pinax" Id="d77d8f65-6251-4098-be9b-04cfe34e91e2" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6A3D:">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="火分摊" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="Levinstrike Pinax" Id="771452a7-d8f9-464e-9028-36e9178601de" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6A3F:">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="雷远离" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="well Pinax" Id="7d47e6c5-30ec-4e5c-8ac7-73a9080d06c4" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6A3E:">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="风击退" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder Id="fe6b0058-a3eb-4113-97d0-a39deab7708b" Name="东南西北" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Name="West Shift Slash" Id="9f63e2e3-1807-43d6-80fe-bf09af051ff4" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6A4D:">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="左手顺劈" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="Westerly Shift knockback" Id="4611be6c-d9c3-4a07-a162-5b6c11d841a2" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6DB1:">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="左边击退" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="Easterly Shift Slash" Id="25b7338a-4ee0-4465-a0e8-57f85efcffdd" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6A4C:">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="右边顺劈" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="Southly Shift Slash" Id="22595e0e-f0bf-40e1-b98d-2720a4fc3ff3" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6A4B:">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="南面顺劈" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="Northerly Shift Slash" Id="57efecd9-cd30-4c9d-8c7a-f970ff219557" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6A4A:">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="北边顺劈" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="Northerly Shift knockback" Id="93b5f2a3-13fc-44a5-84f6-69de206b7fb8" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6DAE:">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="北边击退" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="Easterly Shift knockback" Id="c4a4039b-9761-4f63-a324-efca19426d3f" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6DB0:">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="右边击退" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="Southly Shift knockback" Id="88a5595e-6962-4b79-9bcd-7a16151cd2a1" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6DAF:">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="下边击退" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+            </Triggers>
+          </Folder>
+        </Folders>
         <Triggers>
-          <Trigger Enabled="true" Name="hell Skewer" Id="aa50ecb7-511b-4105-a705-862154f781c0" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6A4F:">
+          <Trigger Enabled="true" Name="Elegant Evisceration" Id="aa50ecb7-511b-4105-a705-862154f781c0" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6A50:">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="坦克死刑" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="bloodrake" Id="ed7fa762-cdde-4ae4-8a61-dea5c1899a0e" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6A40:">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="吸血AOE" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="Belone bursts" Id="f3e7c2a3-6f8a-4a46-b44c-31c08bbe407b" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:69D9:">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="撞球" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="hell Skewer" Id="7e42977b-ee30-4ed7-be43-05383aacfe91" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6A4F:">
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="远离正面" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="Belone Coils" Id="0671ad38-7fed-43b1-9a2a-b7327b8185a0" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:69DD:">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="踩塔" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="Decollation" Id="29e84b29-ae45-404a-b562-f9c56f0e7472" RegularExpression="^.{15}StartsCasting 14:[0-9A-F]{8}:[^:]*:6A51:">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="AOE" TextAuraFontSize="9" TextAuraFontName="SimSun" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
