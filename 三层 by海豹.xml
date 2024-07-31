@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<TriggernometryExport PluginVersion="1.2.0.703">
+  <ExportedFolder Id="3c6c14d2-4926-46f1-aa76-2447b3f3b6a5" Name="三层" Enabled="true">
+    <Folders />
+    <Triggers>
+      <Trigger Enabled="true" Name="钢铁8人" Id="8def8e37-3ce9-42a1-9424-6c4d7243f48e" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93D8|93E8):" RefirePeriodExpression="1000">
+        <Actions>
+          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="钢铁8人" UseTTSRateExpression="1.3" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="核爆22" Id="a33b53ab-e5aa-4f27-ab43-5794426b8417" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93E0|93F5):" RefirePeriodExpression="1000">
+        <Actions>
+          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="核爆二二" UseTTSRateExpression="1.3" ActionType="UseTTS" ExecutionDelayExpression="1000">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="月环22" Id="b12af760-e4ab-40b9-a459-52e7100bc0ce" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93DB|93EB):" RefirePeriodExpression="1000">
+        <Actions>
+          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="月环二二" UseTTSRateExpression="1.3" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="击退8人" Id="12dc7a57-372d-4515-87a4-36a283cf1847" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93DF|93ED):" RefirePeriodExpression="1000">
+        <Actions>
+          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="击退8人" UseTTSRateExpression="1.3" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="月环8人" Id="e7ab9a6a-f2e4-4d8f-82b8-6c12ded26cb5" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93D9|93E9):" RefirePeriodExpression="1000">
+        <Actions>
+          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="月环8人" UseTTSRateExpression="1.3" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="击退22" Id="bb87516a-a788-4d8a-83af-5fd12d80b553" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93E1|93F6):" RefirePeriodExpression="1000">
+        <Actions>
+          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="击退二二" UseTTSRateExpression="1.3" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="核爆8人" Id="fe7c9b1b-f249-4d14-a685-9d4137776a8b" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93DE|93EC):" RefirePeriodExpression="1000">
+        <Actions>
+          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="核爆8人" UseTTSRateExpression="1.3" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="钢铁22" Id="30012d59-1ffe-451d-bed5-439c39af6853" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93DA|93EA):" RefirePeriodExpression="1000">
+        <Actions>
+          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="钢铁二二" UseTTSRateExpression="1.3" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+    </Triggers>
+  </ExportedFolder>
+</TriggernometryExport>
