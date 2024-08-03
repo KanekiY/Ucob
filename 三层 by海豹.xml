@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <TriggernometryExport PluginVersion="1.2.0.7">
-  <ExportedFolder Id="b62e99bc-56e8-4f78-8ab5-a4f594687fcd" Name="M1-4" Enabled="true">
+  <ExportedFolder Id="985c6246-5471-4a74-8bd2-ed756c969d53" Name="M1-4" Enabled="true">
     <Folders>
-      <Folder Id="7bfe0e1b-bae6-4af8-95b8-4c791bd5f51e" Name="四层" Enabled="true">
+      <Folder Id="960a1657-7270-490f-84f6-824d82ebc077" Name="四层" Enabled="true">
         <Folders />
         <Triggers>
-          <Trigger Enabled="true" Name="Roundhouse Conductor 月环" Id="e756f418-757d-4026-a4cc-6c8d926d3421" RegularExpression="^.{15}\S+ 1A:FA5:[^:]*:(?&lt;time&gt;[^:]*):[^:]*::(?&lt;id&gt;[^:]*):[^:]*:">
+          <Trigger Enabled="true" Name="Roundhouse Conductor 月环" Id="261819fc-bad0-44fb-87c0-29c1044a08cb" RegularExpression="^.{15}\S+ 1A:FA5:[^:]*:(?&lt;time&gt;[^:]*):[^:]*::(?&lt;id&gt;[^:]*):[^:]*:">
             <Actions>
-              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="钢铁" UseTTSRateExpression="1.3" ActionType="UseTTS">
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="月环" UseTTSRateExpression="1.3" ActionType="UseTTS">
                 <Condition Enabled="true" Grouping="And" />
               </Action>
             </Actions>
@@ -16,7 +16,7 @@
             </Condition>
             <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="Collider Conductor 引导激光" Id="e7454e75-1f75-448d-9095-cdbc1d947cc4" RegularExpression="^.{15}\S+ 1A:FA6:[^:]*:(?&lt;time&gt;[^:]*):[^:]*::(?&lt;id&gt;[^:]*):[^:]*:">
+          <Trigger Enabled="true" Name="Collider Conductor 引导激光" Id="9629ad0a-82c1-4b59-b49f-e024df5fc1e6" RegularExpression="^.{15}\S+ 1A:FA6:[^:]*:(?&lt;time&gt;[^:]*):[^:]*::(?&lt;id&gt;[^:]*):[^:]*:">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="引导激光" UseTTSRateExpression="1.3" ActionType="UseTTS">
                 <Condition Enabled="true" Grouping="And" />
@@ -27,7 +27,7 @@
             </Condition>
             <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="Remote Current 远线" Id="8d44c7bf-309b-4040-ac35-e32b56fadcbb" RegularExpression="^.{15}\S+ 1A:FA2:[^:]*:(?&lt;time&gt;[^:]*):[^:]*::(?&lt;id&gt;[^:]*):[^:]*:">
+          <Trigger Enabled="true" Name="Remote Current 远线" Id="b60bd1fc-b9e9-4549-88f1-669cee9a723c" RegularExpression="^.{15}\S+ 1A:FA2:[^:]*:(?&lt;time&gt;[^:]*):[^:]*::(?&lt;id&gt;[^:]*):[^:]*:">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="远线远线" UseTTSRateExpression="1.3" ActionType="UseTTS">
                 <Condition Enabled="true" Grouping="And" />
@@ -38,7 +38,7 @@
             </Condition>
             <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="Spinning Conductor 钢铁" Id="94fed294-5670-4c27-8807-2b9d59cef542" RegularExpression="^.{15}\S+ 1A:FA4:[^:]*:(?&lt;time&gt;[^:]*):[^:]*::(?&lt;id&gt;[^:]*):[^:]*:">
+          <Trigger Enabled="true" Name="Spinning Conductor 钢铁" Id="0473ff57-a238-477b-b165-fca9521daf4f" RegularExpression="^.{15}\S+ 1A:FA4:[^:]*:(?&lt;time&gt;[^:]*):[^:]*::(?&lt;id&gt;[^:]*):[^:]*:">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="钢铁" UseTTSRateExpression="1.3" ActionType="UseTTS">
                 <Condition Enabled="true" Grouping="And" />
@@ -49,7 +49,7 @@
             </Condition>
             <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="Proximate Current 近线" Id="1bfaa6cd-b4e2-42e5-a12f-6183e948aadc" RegularExpression="^.{15}\S+ 1A:FA3:[^:]*:(?&lt;time&gt;[^:]*):[^:]*::(?&lt;id&gt;[^:]*):[^:]*:">
+          <Trigger Enabled="true" Name="Proximate Current 近线" Id="21b9cc53-0862-4a0c-a864-04eb41e52f6f" RegularExpression="^.{15}\S+ 1A:FA3:[^:]*:(?&lt;time&gt;[^:]*):[^:]*::(?&lt;id&gt;[^:]*):[^:]*:">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="近线近线" UseTTSRateExpression="1.3" ActionType="UseTTS">
                 <Condition Enabled="true" Grouping="And" />
@@ -62,10 +62,10 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder Id="3c6c14d2-4926-46f1-aa76-2447b3f3b6a5" Name="三层" Enabled="true">
+      <Folder Id="0cc2cef4-a9aa-43a2-8c27-994970a27acd" Name="三层" Enabled="true">
         <Folders />
         <Triggers>
-          <Trigger Enabled="true" Name="钢铁8人" Id="8def8e37-3ce9-42a1-9424-6c4d7243f48e" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93D8|93E8):" RefirePeriodExpression="1000">
+          <Trigger Enabled="true" Name="钢铁8人" Id="bdd7f28a-fe50-4c7a-9d42-96b99d223d2a" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93D8|93E8):" RefirePeriodExpression="1000">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="钢铁分散" UseTTSRateExpression="1" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
@@ -74,7 +74,7 @@
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="核爆22" Id="a33b53ab-e5aa-4f27-ab43-5794426b8417" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93E0|93F5):" RefirePeriodExpression="1000">
+          <Trigger Enabled="true" Name="核爆22" Id="627452fb-26b4-4615-90ca-f174a8a20988" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93E0|93F5):" RefirePeriodExpression="1000">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="核爆分摊" UseTTSRateExpression="1" ActionType="UseTTS" ExecutionDelayExpression="1000">
                 <Condition Enabled="false" Grouping="Or" />
@@ -83,7 +83,7 @@
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="月环22" Id="b12af760-e4ab-40b9-a459-52e7100bc0ce" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93DB|93EB):" RefirePeriodExpression="1000">
+          <Trigger Enabled="true" Name="月环22" Id="ce7136ac-c71f-4ec5-b492-e7ed04d1141f" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93DB|93EB):" RefirePeriodExpression="1000">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="月环分摊" UseTTSRateExpression="1" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
@@ -92,7 +92,7 @@
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="击退8人" Id="12dc7a57-372d-4515-87a4-36a283cf1847" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93DF|93ED):" RefirePeriodExpression="1000">
+          <Trigger Enabled="true" Name="击退8人" Id="9b6b81dd-af91-4d78-a0f6-194cc163ef69" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93DF|93ED):" RefirePeriodExpression="1000">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="击退分散" UseTTSRateExpression="1" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
@@ -101,7 +101,7 @@
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="月环8人" Id="e7ab9a6a-f2e4-4d8f-82b8-6c12ded26cb5" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93D9|93E9):" RefirePeriodExpression="1000">
+          <Trigger Enabled="true" Name="月环8人" Id="e6c7b6df-2ea4-4ffe-b465-28b3c16ac6e9" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93D9|93E9):" RefirePeriodExpression="1000">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="月环分散" UseTTSRateExpression="1.3" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
@@ -110,7 +110,7 @@
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="击退22" Id="bb87516a-a788-4d8a-83af-5fd12d80b553" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93E1|93F6):" RefirePeriodExpression="1000">
+          <Trigger Enabled="true" Name="击退22" Id="acf63695-1a13-45e8-abc5-f98f7c806fc9" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93E1|93F6):" RefirePeriodExpression="1000">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="击退分摊" UseTTSRateExpression="1" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
@@ -119,7 +119,7 @@
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="核爆8人" Id="fe7c9b1b-f249-4d14-a685-9d4137776a8b" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93DE|93EC):" RefirePeriodExpression="1000">
+          <Trigger Enabled="true" Name="核爆8人" Id="ec214da8-6762-4d5e-8d71-a3a19db2ca36" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93DE|93EC):" RefirePeriodExpression="1000">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="核爆分散" UseTTSRateExpression="1" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
@@ -128,7 +128,7 @@
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="钢铁22" Id="30012d59-1ffe-451d-bed5-439c39af6853" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93DA|93EA):" RefirePeriodExpression="1000">
+          <Trigger Enabled="true" Name="钢铁22" Id="6bad1e6a-f858-4334-9f89-52ad7b3683bd" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93DA|93EA):" RefirePeriodExpression="1000">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="钢铁分摊" UseTTSRateExpression="1" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
