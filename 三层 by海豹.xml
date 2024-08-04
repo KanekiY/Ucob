@@ -186,15 +186,6 @@
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Trigger>
-              <Trigger Enabled="false" Name="*adds left/right（别用）" Id="91b5e1fc-99d1-4f34-b8f3-d432ec657c8f" RegularExpression="^.{15}\S+ 105:Change:(?&lt;id&gt;4.{7}):.+WeaponId:(?&lt;wid&gt;33|121)(:|$)">
-                <Actions>
-                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="${?d: 0=front, 1=left, 2=back, 3=right [${n: roundir(${_entity[${id}].h} + (${wid} = 33 ? pi/2 : -pi/2), 4)}]}" ActionType="UseTTS" ExecutionDelayExpression="500">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                </Actions>
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Trigger>
             </Triggers>
           </Folder>
           <Folder Id="e2a1e045-3a2b-4471-ba98-4c73bfc143ae" Name="P1" Enabled="true">
