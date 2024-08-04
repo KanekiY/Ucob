@@ -1,143 +1,264 @@
 <?xml version="1.0"?>
 <TriggernometryExport PluginVersion="1.2.0.7">
-  <ExportedFolder Id="985c6246-5471-4a74-8bd2-ed756c969d53" Name="M1-4" Enabled="true">
+  <ExportedFolder Id="b62e99bc-56e8-4f78-8ab5-a4f594687fcd" Name="M1-4" Enabled="true">
     <Folders>
-      <Folder Id="960a1657-7270-490f-84f6-824d82ebc077" Name="四层" Enabled="true">
+      <Folder Id="3c6c14d2-4926-46f1-aa76-2447b3f3b6a5" Name="三层" Enabled="true">
         <Folders />
         <Triggers>
-          <Trigger Enabled="true" Name="Roundhouse Conductor 月环" Id="261819fc-bad0-44fb-87c0-29c1044a08cb" RegularExpression="^.{15}\S+ 1A:FA5:[^:]*:(?&lt;time&gt;[^:]*):[^:]*::(?&lt;id&gt;[^:]*):[^:]*:">
-            <Actions>
-              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="月环" UseTTSRateExpression="1.3" ActionType="UseTTS">
-                <Condition Enabled="true" Grouping="And" />
-              </Action>
-            </Actions>
-            <Condition Enabled="true" Grouping="And">
-              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${_me.id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-            </Condition>
-            <Conditions />
-          </Trigger>
-          <Trigger Enabled="true" Name="Collider Conductor 引导激光" Id="9629ad0a-82c1-4b59-b49f-e024df5fc1e6" RegularExpression="^.{15}\S+ 1A:FA6:[^:]*:(?&lt;time&gt;[^:]*):[^:]*::(?&lt;id&gt;[^:]*):[^:]*:">
-            <Actions>
-              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="引导激光" UseTTSRateExpression="1.3" ActionType="UseTTS">
-                <Condition Enabled="true" Grouping="And" />
-              </Action>
-            </Actions>
-            <Condition Enabled="true" Grouping="And">
-              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${_me.id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-            </Condition>
-            <Conditions />
-          </Trigger>
-          <Trigger Enabled="true" Name="Remote Current 远线" Id="b60bd1fc-b9e9-4549-88f1-669cee9a723c" RegularExpression="^.{15}\S+ 1A:FA2:[^:]*:(?&lt;time&gt;[^:]*):[^:]*::(?&lt;id&gt;[^:]*):[^:]*:">
-            <Actions>
-              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="远线远线" UseTTSRateExpression="1.3" ActionType="UseTTS">
-                <Condition Enabled="true" Grouping="And" />
-              </Action>
-            </Actions>
-            <Condition Enabled="true" Grouping="And">
-              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${_me.id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-            </Condition>
-            <Conditions />
-          </Trigger>
-          <Trigger Enabled="true" Name="Spinning Conductor 钢铁" Id="0473ff57-a238-477b-b165-fca9521daf4f" RegularExpression="^.{15}\S+ 1A:FA4:[^:]*:(?&lt;time&gt;[^:]*):[^:]*::(?&lt;id&gt;[^:]*):[^:]*:">
-            <Actions>
-              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="钢铁" UseTTSRateExpression="1.3" ActionType="UseTTS">
-                <Condition Enabled="true" Grouping="And" />
-              </Action>
-            </Actions>
-            <Condition Enabled="true" Grouping="And">
-              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${_me.id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-            </Condition>
-            <Conditions />
-          </Trigger>
-          <Trigger Enabled="true" Name="Proximate Current 近线" Id="21b9cc53-0862-4a0c-a864-04eb41e52f6f" RegularExpression="^.{15}\S+ 1A:FA3:[^:]*:(?&lt;time&gt;[^:]*):[^:]*::(?&lt;id&gt;[^:]*):[^:]*:">
-            <Actions>
-              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="近线近线" UseTTSRateExpression="1.3" ActionType="UseTTS">
-                <Condition Enabled="true" Grouping="And" />
-              </Action>
-            </Actions>
-            <Condition Enabled="true" Grouping="And">
-              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${_me.id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-            </Condition>
-            <Conditions />
-          </Trigger>
-        </Triggers>
-      </Folder>
-      <Folder Id="0cc2cef4-a9aa-43a2-8c27-994970a27acd" Name="三层" Enabled="true">
-        <Folders />
-        <Triggers>
-          <Trigger Enabled="true" Name="钢铁8人" Id="bdd7f28a-fe50-4c7a-9d42-96b99d223d2a" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93D8|93E8):" RefirePeriodExpression="1000">
+          <Trigger Enabled="true" Name="钢铁8人" Id="8def8e37-3ce9-42a1-9424-6c4d7243f48e" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93D8|93E8):" RefirePeriodExpression="1000">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="钢铁分散" UseTTSRateExpression="1" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="核爆22" Id="627452fb-26b4-4615-90ca-f174a8a20988" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93E0|93F5):" RefirePeriodExpression="1000">
+          <Trigger Enabled="true" Name="核爆22" Id="a33b53ab-e5aa-4f27-ab43-5794426b8417" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93E0|93F5):" RefirePeriodExpression="1000">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="核爆分摊" UseTTSRateExpression="1" ActionType="UseTTS" ExecutionDelayExpression="1000">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="月环22" Id="ce7136ac-c71f-4ec5-b492-e7ed04d1141f" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93DB|93EB):" RefirePeriodExpression="1000">
+          <Trigger Enabled="true" Name="月环22" Id="b12af760-e4ab-40b9-a459-52e7100bc0ce" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93DB|93EB):" RefirePeriodExpression="1000">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="月环分摊" UseTTSRateExpression="1" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="击退8人" Id="9b6b81dd-af91-4d78-a0f6-194cc163ef69" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93DF|93ED):" RefirePeriodExpression="1000">
+          <Trigger Enabled="true" Name="击退8人" Id="12dc7a57-372d-4515-87a4-36a283cf1847" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93DF|93ED):" RefirePeriodExpression="1000">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="击退分散" UseTTSRateExpression="1" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="月环8人" Id="e6c7b6df-2ea4-4ffe-b465-28b3c16ac6e9" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93D9|93E9):" RefirePeriodExpression="1000">
+          <Trigger Enabled="true" Name="月环8人" Id="e7ab9a6a-f2e4-4d8f-82b8-6c12ded26cb5" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93D9|93E9):" RefirePeriodExpression="1000">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="月环分散" UseTTSRateExpression="1.3" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="击退22" Id="acf63695-1a13-45e8-abc5-f98f7c806fc9" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93E1|93F6):" RefirePeriodExpression="1000">
+          <Trigger Enabled="true" Name="击退22" Id="bb87516a-a788-4d8a-83af-5fd12d80b553" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93E1|93F6):" RefirePeriodExpression="1000">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="击退分摊" UseTTSRateExpression="1" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="核爆8人" Id="ec214da8-6762-4d5e-8d71-a3a19db2ca36" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93DE|93EC):" RefirePeriodExpression="1000">
+          <Trigger Enabled="true" Name="核爆8人" Id="fe7c9b1b-f249-4d14-a685-9d4137776a8b" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93DE|93EC):" RefirePeriodExpression="1000">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="核爆分散" UseTTSRateExpression="1" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="钢铁22" Id="6bad1e6a-f858-4334-9f89-52ad7b3683bd" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93DA|93EA):" RefirePeriodExpression="1000">
+          <Trigger Enabled="true" Name="钢铁22" Id="30012d59-1ffe-451d-bed5-439c39af6853" RegularExpression="^.{15}\S+ 14:[^:]*:[^:]*:(?:93DA|93EA):" RefirePeriodExpression="1000">
             <Actions>
               <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="钢铁分摊" UseTTSRateExpression="1" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
         </Triggers>
+      </Folder>
+      <Folder Id="797e08fc-bf6d-466a-b76e-781e0fb347c6" Name="M4S" Enabled="true">
+        <Folders>
+          <Folder Id="bb03b537-704e-436c-84e3-53aba6faede5" Name="P2" Enabled="true">
+            <Folders>
+              <Folder Id="19814d95-bb9b-455b-a467-de0dd7c07518" Name="水火尾巴" Enabled="true">
+                <Folders>
+                  <Folder Id="b73fd689-2315-4d9e-a4ce-27ba56bfda6c" Name="钢铁" Enabled="true">
+                    <Folders />
+                    <Triggers>
+                      <Trigger Enabled="true" Name="左右钢铁" Id="a701f8c7-db58-4524-8bef-4f4d802cb6ee" RegularExpression="^.{14} StartsCasting 14:.{8}:.*:9602:Aetherial Conversion">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="钢铁，先去右，后去左" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Name="左右钢铁-延迟播报" Id="c31f317c-a764-434e-b316-680b1b9a0238" RegularExpression="^.{14} StartsCasting 14:.{8}:.*:9606:Tail Thrust">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="钢铁，先去右，后去左" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Name="右左钢铁" Id="679b2e3d-112a-43f5-94de-02d4404f8517" RegularExpression="^.{14} StartsCasting 14:.{8}:.*:9604:Aetherial Conversion">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="钢铁，先去左，后去右" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Name="右左钢铁-延迟播报" Id="8c96b7a5-ceba-4b09-a9d6-6115c879671d" RegularExpression="^.{14} StartsCasting 14:.{8}:.*:9608:Tail Thrust">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="钢铁，先去左，后去右" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
+                  <Folder Id="41ed10e3-e4e2-4364-ae44-f83e9fc69449" Name="击退" Enabled="true">
+                    <Folders />
+                    <Triggers>
+                      <Trigger Enabled="true" Name="左右击退" Id="d7079bff-23eb-466d-a848-128eabf1f948" RegularExpression="^.{14} StartsCasting 14:.{8}:.*:9603:Aetherial Conversion">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="击退，先去左，后去右" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Name="左右击退-延迟播报" Id="39a85a2f-1978-45fa-abd1-b517aecd7b58" RegularExpression="^.{14} StartsCasting 14:.{8}:.*:9607:Tail Thrust">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="击退，先去左，后去右" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Name="右左击退" Id="e2a1360c-6093-4c71-9cb3-18b4caafa4ff" RegularExpression="^.{14} StartsCasting 14:.{8}:.*:9605:Aetherial Conversion">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="击退，先去右，后去左" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Name="右左击退-延迟播报" Id="d3d70d3c-c110-466a-ba1b-3074c708e6ec" RegularExpression="^.{14} StartsCasting 14:.{8}:.*:9609:Tail Thrust">
+                        <Actions>
+                          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="击退，先去右，后去左" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
+                </Folders>
+                <Triggers />
+              </Folder>
+              <Folder Id="cc4c6e0c-dc55-415f-bf92-341e6d7a842b" Name="分身" Enabled="true">
+                <Folders />
+                <Triggers />
+              </Folder>
+            </Folders>
+            <Triggers>
+              <Trigger Enabled="true" Name="火两边" Id="430c99c4-5f8b-40c5-a434-ba02fd4c2730" RegularExpression="^.{14} StartsCasting 14:.{8}:.*:9610">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="两边靠外" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="雷中间" Id="c3a38199-8d05-4c9c-b3ae-e1afd9bf41a9" RegularExpression="^.{14} StartsCasting 14:.{8}:.*:9612">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="中间中间" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="*adds left/right" Id="91b5e1fc-99d1-4f34-b8f3-d432ec657c8f" RegularExpression="^.{15}\S+ 105:Change:(?&lt;id&gt;4.{7}):.+WeaponId:(?&lt;wid&gt;33|121)(:|$)">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="${?d: 0=front, 1=left, 2=back, 3=right [${n: roundir(${_entity[${id}].h} + (${wid} = 33 ? pi/2 : -pi/2), 4)}]}" ActionType="UseTTS" ExecutionDelayExpression="500">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder Id="e2a1e045-3a2b-4471-ba98-4c73bfc143ae" Name="P1" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Name="Roundhouse Conductor 月环" Id="3bcd8bd2-faf9-4af3-b9f1-b6b482a56021" RegularExpression="^.{15}\S+ 1A:FA5:[^:]*:(?&lt;time&gt;[^:]*):[^:]*::(?&lt;id&gt;[^:]*):[^:]*:">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="月环" UseTTSRateExpression="1.3" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${_me.id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="Collider Conductor 引导激光" Id="683a23c6-b700-4d57-95e8-4c565d1b8ef9" RegularExpression="^.{15}\S+ 1A:FA6:[^:]*:(?&lt;time&gt;[^:]*):[^:]*::(?&lt;id&gt;[^:]*):[^:]*:">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="引导激光" UseTTSRateExpression="1.3" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${_me.id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="Remote Current 远线" Id="05734a4a-010b-4725-8e1b-e766a17a402a" RegularExpression="^.{15}\S+ 1A:FA2:[^:]*:(?&lt;time&gt;[^:]*):[^:]*::(?&lt;id&gt;[^:]*):[^:]*:">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="远线远线" UseTTSRateExpression="1.3" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${_me.id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="Spinning Conductor 钢铁" Id="1cd1e999-9962-4d9e-a837-2de279a1aa1e" RegularExpression="^.{15}\S+ 1A:FA4:[^:]*:(?&lt;time&gt;[^:]*):[^:]*::(?&lt;id&gt;[^:]*):[^:]*:">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="钢铁" UseTTSRateExpression="1.3" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${_me.id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="Proximate Current 近线" Id="43f72e76-14d3-4289-b0bc-1f8fc691c862" RegularExpression="^.{15}\S+ 1A:FA3:[^:]*:(?&lt;time&gt;[^:]*):[^:]*::(?&lt;id&gt;[^:]*):[^:]*:">
+                <Actions>
+                  <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="近线近线" UseTTSRateExpression="1.3" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="String" ExpressionR="${_me.id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+                <Conditions />
+              </Trigger>
+            </Triggers>
+          </Folder>
+        </Folders>
+        <Triggers />
       </Folder>
     </Folders>
     <Triggers />
